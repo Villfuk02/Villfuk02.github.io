@@ -1,951 +1,1196 @@
 <!DOCTYPE html!>
 <html>
   <head>
-    <title>Black cards</title>
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-      table {
-        border-collapse: collapse;
-        font-size: 80%;
-      }
-      th {
-        text-align: left;
-        background-color: #ccc;
-        cursor: default;
-      }
-      td, th {
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding: 5px;
-      }
-    </style>
+    <title>The Marksman items</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
   </head>
   <body>
-    <h1>Black cards</h1>
+    
+    <h1>The Marksman cards</h1>
     <table class="sortable">
-      <tr>
-        <th>Name</th>
-        <th>Image</th>
-        <th>Upgraded image</th>
-        <th>Rarity</th>
-        <th>Type</th>
-        <th>Cost</th>
-        <th>Description</th>
-      </tr>
-      
-      <tr>
-        <td>Acid Bottle</td>
-        <td><img src="card-images/AcidBottle.png"></td>
-        <td><img src="card-images/AcidBottlePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Apply 2(3) Corrosion to an enemy. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Aggression</td>
-        <td><img src="card-images/Aggression.png"></td>
-        <td><img src="card-images/AggressionPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>1</td>
-        <td>Every time you become Vulnerable, remove the effect and ALL creatures (including you) gain 2(3) Strength for this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Ammo Box</td>
-        <td><img src="card-images/AmmoBox.png"></td>
-        <td><img src="card-images/AmmoBoxPlus1.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Draw 3(4) cards. This card cost 1 more energy for this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Anti Flame</td>
-        <td><img src="card-images/AntiFlame.png"></td>
-        <td><img src="card-images/AntiFlamePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 17(22) Block. Shuffle 3 Burns into your discard pile. Discard ALL Burns.</td>
-      </tr>
-      
-      <tr>
-        <td>Assasinate</td>
-        <td><img src="card-images/Assasinate.png"></td>
-        <td><img src="card-images/AssasinatePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Deal 38(46) Silent Damage. Lose 1 Strength 3 times.</td>
-      </tr>
-      
-      <tr>
-        <td>Automatic Mode</td>
-        <td><img src="card-images/AutomaticMode.png"></td>
-        <td><img src="card-images/AutomaticModePlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Gain [R] [R]. Put 3(2) Burns into your discard pile. Can be only played as a first card this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Backup Plan</td>
-        <td><img src="card-images/BackupPlan.png"></td>
-        <td><img src="card-images/BackupPlanPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>(Retain.) Choose 1 card from your draw pile and place it into your hand. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Battery Acid</td>
-        <td><img src="card-images/BatteryAcid.png"></td>
-        <td><img src="card-images/BatteryAcidPlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Gain [R] [R] [R] ([R]). Gain 1 Corrosion. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Bayonet</td>
-        <td><img src="card-images/Bayonet.png"></td>
-        <td><img src="card-images/BayonetPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>0</td>
-        <td>(Retain.) Expose yourself. Deal 7(10) damage for every Critical hit this turn. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Black Powder</td>
-        <td><img src="card-images/BlackPowder.png"></td>
-        <td><img src="card-images/BlackPowderPlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>2(1)</td>
-        <td>Every time a card is exhausted, shuffle HE Grenade into your draw pile.</td>
-      </tr>
-      
-      <tr>
-        <td>Blast Shields</td>
-        <td><img src="card-images/BlastShields.png"></td>
-        <td><img src="card-images/BlastShieldsPlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>3</td>
-        <td>Every time you use a Grenade, gain 7(10) Block.</td>
-      </tr>
-      
-      <tr>
-        <td>Bow</td>
-        <td><img src="card-images/Bow.png"></td>
-        <td><img src="card-images/BowPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 8(10) Silent damage. Crit: !C! % Lose 1 Strength.</td>
-      </tr>
-      
-      <tr>
-        <td>Burst Fire</td>
-        <td><img src="card-images/BurstFire.png"></td>
-        <td><img src="card-images/BurstFirePlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Deal 4 Damage 3(4) times. Crit: !C! % Lose 30 Precision.</td>
-      </tr>
-      
-      <tr>
-        <td>Calculated</td>
-        <td><img src="card-images/Calculated.png"></td>
-        <td><img src="card-images/CalculatedPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 20(30) Precision. Draw 2 cards. Discard 2 cards.</td>
-      </tr>
-      
-      <tr>
-        <td>Camouflage</td>
-        <td><img src="card-images/Camouflage.png"></td>
-        <td><img src="card-images/CamouflagePlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 14(18) Block.</td>
-      </tr>
-      
-      <tr>
-        <td>Chainsaw</td>
-        <td><img src="card-images/Chainsaw.png"></td>
-        <td><img src="card-images/ChainsawPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>0</td>
-        <td>Expose yourself. Deal 6 Damage. Draw a 0-cost card from your draw pile. (If there are none, shuffle your discard into your draw pile.)</td>
-      </tr>
-      
-      <tr>
-        <td>Cluster Grenade</td>
-        <td><img src="card-images/ClusterGrenade.png"></td>
-        <td><img src="card-images/ClusterGrenadePlus.png"></td>
-        <td>Rare</td>
-        <td>Attack</td>
-        <td>X</td>
-        <td>Deal 4(6) Damage to ALL enemies X+1 times. If X is more than 0, gain [R] .</td>
-      </tr>
-      
-      <tr>
-        <td>Combat Trousers</td>
-        <td><img src="card-images/CombatTrousers.png"></td>
-        <td><img src="card-images/CombatTrousersPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 8(10) Block. Discard 1 random card, then Retain 1 random card.</td>
-      </tr>
-      
-      <tr>
-        <td>Concentrate</td>
-        <td><img src="card-images/Concentrate.png"></td>
-        <td><img src="card-images/ConcentratePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 1 Concentrated. Draw 3(4) cards. You cannot draw any more cards this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Corrosive Grenade</td>
-        <td><img src="card-images/CorrosiveGrenade.png"></td>
-        <td><img src="card-images/CorrosiveGrenadePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 3(4) Damage and apply 2(3) Corrosion to ALL enemies. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Counter Strike</td>
-        <td><img src="card-images/CounterStrike.png"></td>
-        <td><img src="card-images/CounterStrikePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>1</td>
-        <td>Every time you lose Strength or Dexterity, deal 3(4) damage to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Critical Decision</td>
-        <td><img src="card-images/CriticalDecision.png"></td>
-        <td><img src="card-images/CriticalDecisionPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Ethereal. Draw 3(5) cards for every Critical hit you've dealt this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Crossbow</td>
-        <td><img src="card-images/Crossbow.png"></td>
-        <td><img src="card-images/CrossbowPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 3(4) Silent damage and apply 1(2) Frail twice. Crit: !C! %</td>
-      </tr>
-      
-      <tr>
-        <td>Decoy</td>
-        <td><img src="card-images/Decoy.png"></td>
-        <td><img src="card-images/DecoyPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Expose yourself. Gain 11(15) Block.</td>
-      </tr>
-      
-      <tr>
-        <td>Defend</td>
-        <td><img src="card-images/Defend.png"></td>
-        <td><img src="card-images/DefendPlus.png"></td>
-        <td>Basic</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 4(6) Block.</td>
-      </tr>
-      
-      <tr>
-        <td>Defibrilator</td>
-        <td><img src="card-images/Defibrilator.png"></td>
-        <td><img src="card-images/DefibrilatorPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>(Innate.) Lose 18(15) HP. Gain 6 Regen. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Electric Blood</td>
-        <td><img src="card-images/ElectricBlood.png"></td>
-        <td><img src="card-images/ElectricBloodPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Gain [R] ([R]). Lose 10 HP. Deal 1 damage to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Electric Grenade</td>
-        <td><img src="card-images/ElectricGrenade.png"></td>
-        <td><img src="card-images/ElectricGrenadePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Deal 9(12) Damage to ALL enemies. Next turn, gain [R] [R] .</td>
-      </tr>
-      
-      <tr>
-        <td>Expect Anything</td>
-        <td><img src="card-images/ExpectAnything.png"></td>
-        <td><img src="card-images/ExpectAnythingPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Innate. Ethereal. Gain 10(14) Block. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Explosives Expert</td>
-        <td><img src="card-images/ExplosivesExpert.png"></td>
-        <td><img src="card-images/ExplosivesExpertPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2</td>
-        <td>Every time you use a Grenade, draw 2(3) cards.</td>
-      </tr>
-      
-      <tr>
-        <td>Extended Magazines</td>
-        <td><img src="card-images/ExtendedMagazines.png"></td>
-        <td><img src="card-images/ExtendedMagazinesPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Draw 2(3) cards. If you have at most 1 Skill in your hand, Gain [R].</td>
-      </tr>
-      
-      <tr>
-        <td>Eye For An Eye</td>
-        <td><img src="card-images/EyeForAnEye.png"></td>
-        <td><img src="card-images/EyeForAnEyePlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>3</td>
-        <td>Every time you lose HP, deal that (2 times as) much damage to a random enemy.</td>
-      </tr>
-      
-      <tr>
-        <td>Firepower</td>
-        <td><img src="card-images/Firepower.png"></td>
-        <td><img src="card-images/FirepowerPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2(1)</td>
-        <td>Every time you gain Burning, remove that effect and apply that much Burning to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Firewall</td>
-        <td><img src="card-images/Firewall.png"></td>
-        <td><img src="card-images/FirewallPlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 12(10) Burning. Next turn, Gain 30(40) Block.</td>
-      </tr>
-      
-      <tr>
-        <td>First Aid Kit</td>
-        <td><img src="card-images/FirstAidKit.png"></td>
-        <td><img src="card-images/FirstAidKitPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Heal ALL HP lost this turn. Shuffle 2 (Upgraded) Painkillers into your draw pile.</td>
-      </tr>
-      
-      <tr>
-        <td>Flamethrower</td>
-        <td><img src="card-images/Flamethrower.png"></td>
-        <td><img src="card-images/FlamethrowerPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>X</td>
-        <td>Apply 3(4) Burning to ALL enemies X times.</td>
-      </tr>
-      
-      <tr>
-        <td>Flammable Fumes</td>
-        <td><img src="card-images/FlammableFumes.png"></td>
-        <td><img src="card-images/FlammableFumesPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2</td>
-        <td>At the end of every turn, increase ALL Burning by 4(6)</td>
-      </tr>
-      
-      <tr>
-        <td>Flare Gun</td>
-        <td><img src="card-images/FlareGun.png"></td>
-        <td><img src="card-images/FlareGunPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td></td>
-        <td>Unplayable. When drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies (, Draw 1 card).</td>
-      </tr>
-      
-      <tr>
-        <td>Foresight</td>
-        <td><img src="card-images/Foresight.png"></td>
-        <td><img src="card-images/ForesightPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 11(15) Block. Place a card from your discard pile on top of your draw pile.</td>
-      </tr>
-      
-      <tr>
-        <td>Frag Grenade</td>
-        <td><img src="card-images/FragGrenade.png"></td>
-        <td><img src="card-images/FragGrenadePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Deal 7(8) Damage to ALL enemies. Deal 2 Silent Damage to a random enemy 7(10) times.</td>
-      </tr>
-      
-      <tr>
-        <td>Fragile Blood</td>
-        <td><img src="card-images/FragileBlood.png"></td>
-        <td><img src="card-images/FragileBloodPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>0</td>
-        <td>Gain 4(5) Regen. Apply 4(5) Thorns to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Friendly Fire</td>
-        <td><img src="card-images/FriendlyFire.png"></td>
-        <td><img src="card-images/FriendlyFirePlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>3(2)</td>
-        <td>For every Burning damage you deal, gain that much Block.</td>
-      </tr>
-      
-      <tr>
-        <td>Frying Pan</td>
-        <td><img src="card-images/FryingPan.png"></td>
-        <td><img src="card-images/FryingPanPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Retain. If you have 0 Block, gain 7(9) Block. Otherwise deal 8(10) damage.</td>
-      </tr>
-      
-      <tr>
-        <td>Gamma Ray</td>
-        <td><img src="card-images/GammaRay.png"></td>
-        <td><img src="card-images/GammaRayPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Deal 5(6) damage twice. Crit: !C! % If this deals 2 critical hits, the second one deals 9 times as much damage.</td>
-      </tr>
-      
-      <tr>
-        <td>Gasoline</td>
-        <td><img src="card-images/Gasoline.png"></td>
-        <td><img src="card-images/GasolinePlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Triple (Quadruple) ALL Burning. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Ghost Form</td>
-        <td><img src="card-images/GhostForm.png"></td>
-        <td><img src="card-images/GhostFormPlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>1(0)</td>
-        <td>Gain 2 Intangible. ALL cards become Ethereal.</td>
-      </tr>
-      
-      <tr>
-        <td>Golden Bullet</td>
-        <td><img src="card-images/GoldenBullet.png"></td>
-        <td><img src="card-images/GoldenBulletPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Spend 8 Gold. Deal 20(24) damage. Crit: !C! % If this deals Critical hit, Gain 40 Gold. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Grenade Launcher</td>
-        <td><img src="card-images/GrenadeLauncher.png"></td>
-        <td><img src="card-images/GrenadeLauncherPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>0</td>
-        <td>(Retain.) Use and Exhaust a Grenade from your draw pile, discard pile or hand.</td>
-      </tr>
-      
-      <tr>
-        <td>Guilt</td>
-        <td><img src="card-images/Guilt.png"></td>
-        <td><img src="card-images/GuiltPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2</td>
-        <td>(Innate.) At the start of every turn, gain [R] [R] ([R]). Every time you play an Attack, lose 2 Strength for one turn.</td>
-      </tr>
-      
-      <tr>
-        <td>HE Grenade</td>
-        <td><img src="card-images/HEGrenade.png"></td>
-        <td><img src="card-images/HEGrenadePlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Deal 10(13) Damage to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Hand Cannon</td>
-        <td><img src="card-images/HandCannon.png"></td>
-        <td><img src="card-images/HandCannonPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Deal 8(10) Damage. Crit: !C! % Target loses 6(8) HP. Lose 25 Precision.</td>
-      </tr>
-      
-      <tr>
-        <td>Hand Claws</td>
-        <td><img src="card-images/HandClaws.png"></td>
-        <td><img src="card-images/HandClawsPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Lose 6 HP. Add 5(7) Shivs to your hand. (Affected by damage modifiers.)</td>
-      </tr>
-      
-      <tr>
-        <td>Heavy Shotgun</td>
-        <td><img src="card-images/HeavyShotgun.png"></td>
-        <td><img src="card-images/HeavyShotgunPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Expose yourself. Deal 4(5) Damage to random enemy 4 times. Crit: !C! % Discard random card for every Critical hit.</td>
-      </tr>
-      
-      <tr>
-        <td>Height Advantage</td>
-        <td><img src="card-images/HeightAdvantage.png"></td>
-        <td><img src="card-images/HeightAdvantagePlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 4(6) Block. Gain 5(10) Precision. Expose ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Hideout</td>
-        <td><img src="card-images/Hideout.png"></td>
-        <td><img src="card-images/HideoutPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Gain 7(10) Block for every Critical hit you've dealt this turn. Next turn draw 1 card less.</td>
-      </tr>
-      
-      <tr>
-        <td>Ignite</td>
-        <td><img src="card-images/Ignite.png"></td>
-        <td><img src="card-images/IgnitePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1(0)</td>
-        <td>This turn, whenever you deal unblocked Attack damage, apply 2 Burning.</td>
-      </tr>
-      
-      <tr>
-        <td>Insulation</td>
-        <td><img src="card-images/Insulation.png"></td>
-        <td><img src="card-images/InsulationPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Retain. Exhaust ALL Burns in your (draw and) discard pile. For each, apply 4(5) Burning to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Kevlar</td>
-        <td><img src="card-images/Kevlar.png"></td>
-        <td><img src="card-images/KevlarPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 6(7) Block. If you have less than 6(7) Plated Armor, gain 3(4) Plated Armor.</td>
-      </tr>
-      
-      <tr>
-        <td>Lay Down</td>
-        <td><img src="card-images/LayDown.png"></td>
-        <td><img src="card-images/LayDownPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Gain 7(9) Block. Gain 10(20) Precision. Lose 1 Strength for this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Lock On</td>
-        <td><img src="card-images/LockOn.png"></td>
-        <td><img src="card-images/LockOnPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1(0)</td>
-        <td>Expose an enemy. Every other enemy gains 99 Block. Gain 1 Concentrated. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Lucky Mode</td>
-        <td><img src="card-images/LuckyMode.png"></td>
-        <td><img src="card-images/LuckyModePlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>Gain 1 Weak. Gain 35(50) Precision. Can be only played as a first card this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Minigun</td>
-        <td><img src="card-images/Minigun.png"></td>
-        <td><img src="card-images/MinigunPlus1.png"></td>
-        <td>Rare</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Deal 1 Silent Damage to random enemy 11(15) times. Crit: !C! % Ignores Precision. Fires once more for every Critical hit.</td>
-      </tr>
-      
-      <tr>
-        <td>Molotov Cocktail</td>
-        <td><img src="card-images/MolotovCocktail.png"></td>
-        <td><img src="card-images/MolotovCocktailPlus.png"></td>
-        <td>Common</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Apply 4(6) Burning.</td>
-      </tr>
-      
-      <tr>
-        <td>Napalm Grenade</td>
-        <td><img src="card-images/NapalmGrenade.png"></td>
-        <td><img src="card-images/NapalmGrenadePlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Deal 5 Damage and apply 3(5) Burning to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Nuclear Power</td>
-        <td><img src="card-images/NuclearPower.png"></td>
-        <td><img src="card-images/NuclearPowerPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>X</td>
-        <td>Next turn, gain 2 X - 3(2) Energy.</td>
-      </tr>
-      
-      <tr>
-        <td>Perfect Form</td>
-        <td><img src="card-images/PerfectForm.png"></td>
-        <td><img src="card-images/PerfectFormPlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>4</td>
-        <td>Ethereal. Whenever you deal a Critical hit, play the card again. Works 2(3) times per turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Pump Shotgun</td>
-        <td><img src="card-images/PumpShotgun.png"></td>
-        <td><img src="card-images/PumpShotgunPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Expose yourself. Deal 3 Damage to random enemy 4(5) times. Crit: !C! % Lose 20 Precision for every Critical hit.</td>
-      </tr>
-      
-      <tr>
-        <td>Railgun</td>
-        <td><img src="card-images/Railgun.png"></td>
-        <td><img src="card-images/RailgunPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>X</td>
-        <td>Deal 4 Damage X times. Crit: X times !C! %.</td>
-      </tr>
-      
-      <tr>
-        <td>Revolver</td>
-        <td><img src="card-images/Revolver.png"></td>
-        <td><img src="card-images/RevolverPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 4 Damage. Crit: !C! % Critical hit deals 5(7) times as much damage instead of 3 times.</td>
-      </tr>
-      
-      <tr>
-        <td>Rocket Jump</td>
-        <td><img src="card-images/RocketJump.png"></td>
-        <td><img src="card-images/RocketJumpPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 11(12) damage. Shuffle 3 Burns into your discard pile. Draw 4(5) cards.</td>
-      </tr>
-      
-      <tr>
-        <td>Rocket Launcher</td>
-        <td><img src="card-images/RocketLauncher.png"></td>
-        <td><img src="card-images/RocketLauncherPlus.png"></td>
-        <td>Rare</td>
-        <td>Attack</td>
-        <td>4</td>
-        <td>Deal 30(36) damage. Crit: !C! % Apply 3(4) Burning to ALL enemies.</td>
-      </tr>
-      
-      <tr>
-        <td>Run And Gun</td>
-        <td><img src="card-images/RunAndGun.png"></td>
-        <td><img src="card-images/RunAndGunPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 5(7) damage, Crit: !C! % Draw 2 cards.</td>
-      </tr>
-      
-      <tr>
-        <td>Rusty Handgun</td>
-        <td><img src="card-images/RustyHandgun.png"></td>
-        <td><img src="card-images/RustyHandgunPlus.png"></td>
-        <td>Basic</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 4 Damage. Crit: !C! % Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Save Up</td>
-        <td><img src="card-images/SaveUp.png"></td>
-        <td><img src="card-images/SaveUpPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>(Retain.) Next turn, gain [R] [R] and draw 3 more cards.</td>
-      </tr>
-      
-      <tr>
-        <td>Saw Blade</td>
-        <td><img src="card-images/SawBlade.png"></td>
-        <td><img src="card-images/SawBladePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>0</td>
-        <td>Expose yourself. Deal 4 Damage to ALL enemies. Draw (1 card. Draw) a 0-cost card from your draw pile.</td>
-      </tr>
-      
-      <tr>
-        <td>Silver Blood</td>
-        <td><img src="card-images/SilverBlood.png"></td>
-        <td><img src="card-images/SilverBloodPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2</td>
-        <td>ALL enemies gain 2(1) Strength. Every time you lose HP, gain 1 Regen.</td>
-      </tr>
-      
-      <tr>
-        <td>Silver Bullet</td>
-        <td><img src="card-images/SilverBullet.png"></td>
-        <td><img src="card-images/SilverBulletPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Lose 3 HP. Deal 20(24) damage. Crit: !C! % If this deals Critical hit, heal 15 HP. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Skin = Skill</td>
-        <td><img src="card-images/Skin=Skill.png"></td>
-        <td><img src="card-images/Skin=SkillPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>2</td>
-        <td>Gain 13(17) Block. Upgrade 2 random (ALL) Attacks in your hand for the rest of combat.</td>
-      </tr>
-      
-      <tr>
-        <td>Smoke Grenade</td>
-        <td><img src="card-images/SmokeGrenade.png"></td>
-        <td><img src="card-images/SmokeGrenadePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1(0)</td>
-        <td>Apply 2 Weak to ALL enemies. Lose 20 Precision.</td>
-      </tr>
-      
-      <tr>
-        <td>Sniper Rifle</td>
-        <td><img src="card-images/SniperRifle.png"></td>
-        <td><img src="card-images/SniperRiflePlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>Deal 22(24) damage. Crit: !C! % If this deals Critical hit, copy this card into your draw pile. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Stealth Mode</td>
-        <td><img src="card-images/StealthMode.png"></td>
-        <td><img src="card-images/StealthModePlus.png"></td>
-        <td>Rare</td>
-        <td>Skill</td>
-        <td>0</td>
-        <td>(Innate.) Gain 1 Intangible. Lose 1 Strength. Can be only played as a first card this turn.</td>
-      </tr>
-      
-      <tr>
-        <td>Steel Blood</td>
-        <td><img src="card-images/SteelBlood.png"></td>
-        <td><img src="card-images/SteelBloodPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>Lose 6 HP. Gain 3(5) Metalicize.</td>
-      </tr>
-      
-      <tr>
-        <td>Strike</td>
-        <td><img src="card-images/Strike.png"></td>
-        <td><img src="card-images/StrikePlus.png"></td>
-        <td>Basic</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 5(7) Damage.</td>
-      </tr>
-      
-      <tr>
-        <td>Stun Grenade</td>
-        <td><img src="card-images/StunGrenade.png"></td>
-        <td><img src="card-images/StunGrenadePlus.png"></td>
-        <td>Basic</td>
-        <td>Attack</td>
-        <td>3</td>
-        <td>(Innate.) Deal 3(6) Damage and apply 3(4) Weak and Vulnerable to ALL enemies. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Tactical Shotgun</td>
-        <td><img src="card-images/TacticalShotgun.png"></td>
-        <td><img src="card-images/TacticalShotgunPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Attack</td>
-        <td>2</td>
-        <td>Expose yourself. Deal 2 Damage to random enemy 6 times. Crit: !C! % Draw a card for every Critical hit.</td>
-      </tr>
-      
-      <tr>
-        <td>The Law</td>
-        <td><img src="card-images/TheLaw.png"></td>
-        <td><img src="card-images/TheLawPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Skill</td>
-        <td>1</td>
-        <td>(Innate.) Retain. Remove ALL effects affecting damage from ALL creatures. Exhaust.</td>
-      </tr>
-      
-      <tr>
-        <td>Tracers</td>
-        <td><img src="card-images/Tracers.png"></td>
-        <td><img src="card-images/TracersPlus.png"></td>
-        <td>Uncommon</td>
-        <td>Power</td>
-        <td>2</td>
-        <td>Every time you play an Attack, gain 5(8) Precision.</td>
-      </tr>
-      
-      <tr>
-        <td>Trusty Handgun</td>
-        <td><img src="card-images/TrustyHandgun.png"></td>
-        <td><img src="card-images/TrustyHandgunPlus.png"></td>
-        <td>Basic</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 4(5) Damage. Crit: !C! %</td>
-      </tr>
-      
-      <tr>
-        <td>UV Laser</td>
-        <td><img src="card-images/UVLaser.png"></td>
-        <td><img src="card-images/UVLaserPlus.png"></td>
-        <td>Common</td>
-        <td>Attack</td>
-        <td>1</td>
-        <td>Deal 8(10) Silent Damage to ALL enemies. Gain 2 Weak.</td>
-      </tr>
-      
-      <tr>
-        <td>Veteran</td>
-        <td><img src="card-images/Veteran.png"></td>
-        <td><img src="card-images/VeteranPlus.png"></td>
-        <td>Rare</td>
-        <td>Power</td>
-        <td>0</td>
-        <td>Innate. Lose 2(1) Strength. Every turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength.</td>
-      </tr>
-      
-      <tr>
-        <td>Void Grenade</td>
-        <td><img src="card-images/VoidGrenade.png"></td>
-        <td><img src="card-images/VoidGrenadePlus.png"></td>
-        <td>Rare</td>
-        <td>Attack</td>
-        <td>4</td>
-        <td>Deal 4(6) Damage to ALL enemies. Play ALL Grenades from your draw (and discard) pile(s). WARNING: Don't let the Voids merge!</td>
-      </tr>
-      
-    </table>
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Upgraded image</th>
+    <th>Rarity</th>
+    <th>Type</th>
+    <th>Cost</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>Painkillers</td>
+    <td><a href="card-images/Painkillers.png"><img src="small-card-images/Painkillers.png" height="298"></a></td>
+    <td><a href="card-images/PainkillersPlus.png"><img src="small-card-images/PainkillersPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Heal 75(100) % of HP lost this turn.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Defend</td>
+    <td><a href="card-images/Defend.png"><img src="small-card-images/Defend.png" height="298"></a></td>
+    <td><a href="card-images/DefendPlus.png"><img src="small-card-images/DefendPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 4(6) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Rusty Handgun</td>
+    <td><a href="card-images/RustyHandgun.png"><img src="small-card-images/RustyHandgun.png" height="298"></a></td>
+    <td><a href="card-images/RustyHandgunPlus.png"><img src="small-card-images/RustyHandgunPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 4 Damage.
+Crit: !C! %
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Strike</td>
+    <td><a href="card-images/Strike.png"><img src="small-card-images/Strike.png" height="298"></a></td>
+    <td><a href="card-images/StrikePlus.png"><img src="small-card-images/StrikePlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 5(7) Damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Stun Grenade</td>
+    <td><a href="card-images/StunGrenade.png"><img src="small-card-images/StunGrenade.png" height="298"></a></td>
+    <td><a href="card-images/StunGrenadePlus.png"><img src="small-card-images/StunGrenadePlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>(Innate.)
+ Deal 3(6) Damage and apply 3(4) Weak and Vulnerable to ALL enemies.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Trusty Handgun</td>
+    <td><a href="card-images/TrustyHandgun.png"><img src="small-card-images/TrustyHandgun.png" height="298"></a></td>
+    <td><a href="card-images/TrustyHandgunPlus.png"><img src="small-card-images/TrustyHandgunPlus.png" height="298"></a></td>
+    <td>Basic</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 4(5) Damage.
+Crit: !C! %</td>
+  </tr>
+  
+  <tr>
+    <td>Backup Plan</td>
+    <td><a href="card-images/BackupPlan.png"><img src="small-card-images/BackupPlan.png" height="298"></a></td>
+    <td><a href="card-images/BackupPlanPlus.png"><img src="small-card-images/BackupPlanPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>(Retain.)
+ Choose 1 card from your draw pile and place it into your hand.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Bayonet</td>
+    <td><a href="card-images/Bayonet.png"><img src="small-card-images/Bayonet.png" height="298"></a></td>
+    <td><a href="card-images/BayonetPlus.png"><img src="small-card-images/BayonetPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>(Retain.)
+ Expose yourself.
+Deal 7(10) damage for every Critical hit this turn.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Bow</td>
+    <td><a href="card-images/Bow.png"><img src="small-card-images/Bow.png" height="298"></a></td>
+    <td><a href="card-images/BowPlus.png"><img src="small-card-images/BowPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 8(10) Silent damage.
+Crit: !C! %
+Lose 1 Strength.</td>
+  </tr>
+  
+  <tr>
+    <td>Burst Fire</td>
+    <td><a href="card-images/BurstFire.png"><img src="small-card-images/BurstFire.png" height="298"></a></td>
+    <td><a href="card-images/BurstFirePlus.png"><img src="small-card-images/BurstFirePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 4 Damage 3(4) times.
+Crit: !C! %
+Lose 30 Precision.</td>
+  </tr>
+  
+  <tr>
+    <td>Calculated</td>
+    <td><a href="card-images/Calculated.png"><img src="small-card-images/Calculated.png" height="298"></a></td>
+    <td><a href="card-images/CalculatedPlus.png"><img src="small-card-images/CalculatedPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 20(30) Precision.
+Draw 2 cards.
+Discard 2 cards.</td>
+  </tr>
+  
+  <tr>
+    <td>Camouflage</td>
+    <td><a href="card-images/Camouflage.png"><img src="small-card-images/Camouflage.png" height="298"></a></td>
+    <td><a href="card-images/CamouflagePlus.png"><img src="small-card-images/CamouflagePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 14(18) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Chainsaw</td>
+    <td><a href="card-images/Chainsaw.png"><img src="small-card-images/Chainsaw.png" height="298"></a></td>
+    <td><a href="card-images/ChainsawPlus.png"><img src="small-card-images/ChainsawPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>Expose yourself.
+Deal 6 Damage.
+Draw a 0-cost card from your draw pile. 
+(If there are none, shuffle your discard into your draw pile.)</td>
+  </tr>
+  
+  <tr>
+    <td>Combat Trousers</td>
+    <td><a href="card-images/CombatTrousers.png"><img src="small-card-images/CombatTrousers.png" height="298"></a></td>
+    <td><a href="card-images/CombatTrousersPlus.png"><img src="small-card-images/CombatTrousersPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 8(10) Block.
+Discard 1 random card, then Retain 1 random card.</td>
+  </tr>
+  
+  <tr>
+    <td>Decoy</td>
+    <td><a href="card-images/Decoy.png"><img src="small-card-images/Decoy.png" height="298"></a></td>
+    <td><a href="card-images/DecoyPlus.png"><img src="small-card-images/DecoyPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Expose yourself.
+Gain 11(15) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Expect Anything</td>
+    <td><a href="card-images/ExpectAnything.png"><img src="small-card-images/ExpectAnything.png" height="298"></a></td>
+    <td><a href="card-images/ExpectAnythingPlus.png"><img src="small-card-images/ExpectAnythingPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Innate.
+Ethereal.
+Gain 10(14) Block.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Golden Bullet</td>
+    <td><a href="card-images/GoldenBullet.png"><img src="small-card-images/GoldenBullet.png" height="298"></a></td>
+    <td><a href="card-images/GoldenBulletPlus.png"><img src="small-card-images/GoldenBulletPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Spend 8 Gold.
+Deal 20(24) damage.
+Crit: !C! %
+If this deals Critical hit, Gain 40 Gold.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>HE Grenade</td>
+    <td><a href="card-images/HEGrenade.png"><img src="small-card-images/HEGrenade.png" height="298"></a></td>
+    <td><a href="card-images/HEGrenadePlus.png"><img src="small-card-images/HEGrenadePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 10(13) Damage to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Hand Cannon</td>
+    <td><a href="card-images/HandCannon.png"><img src="small-card-images/HandCannon.png" height="298"></a></td>
+    <td><a href="card-images/HandCannonPlus.png"><img src="small-card-images/HandCannonPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 8(10) Damage.
+Crit: !C! %
+Target loses 6(8) HP.
+Lose 25 Precision.</td>
+  </tr>
+  
+  <tr>
+    <td>Height Advantage</td>
+    <td><a href="card-images/HeightAdvantage.png"><img src="small-card-images/HeightAdvantage.png" height="298"></a></td>
+    <td><a href="card-images/HeightAdvantagePlus.png"><img src="small-card-images/HeightAdvantagePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 4(6) Block.
+Gain 5(10) Precision.
+Expose ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Lay Down</td>
+    <td><a href="card-images/LayDown.png"><img src="small-card-images/LayDown.png" height="298"></a></td>
+    <td><a href="card-images/LayDownPlus.png"><img src="small-card-images/LayDownPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 7(9) Block.
+Gain 10(20) Precision.
+Lose 1 Strength for this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Molotov Cocktail</td>
+    <td><a href="card-images/MolotovCocktail.png"><img src="small-card-images/MolotovCocktail.png" height="298"></a></td>
+    <td><a href="card-images/MolotovCocktailPlus.png"><img src="small-card-images/MolotovCocktailPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Apply 4(6) Burning.</td>
+  </tr>
+  
+  <tr>
+    <td>Napalm Grenade</td>
+    <td><a href="card-images/NapalmGrenade.png"><img src="small-card-images/NapalmGrenade.png" height="298"></a></td>
+    <td><a href="card-images/NapalmGrenadePlus.png"><img src="small-card-images/NapalmGrenadePlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 5 Damage and apply 3(5) Burning to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Pump Shotgun</td>
+    <td><a href="card-images/PumpShotgun.png"><img src="small-card-images/PumpShotgun.png" height="298"></a></td>
+    <td><a href="card-images/PumpShotgunPlus.png"><img src="small-card-images/PumpShotgunPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Expose yourself.
+Deal 3 Damage to random enemy 4(5) times. Crit: !C! %
+Lose 20 Precision for every Critical hit.</td>
+  </tr>
+  
+  <tr>
+    <td>Revolver</td>
+    <td><a href="card-images/Revolver.png"><img src="small-card-images/Revolver.png" height="298"></a></td>
+    <td><a href="card-images/RevolverPlus.png"><img src="small-card-images/RevolverPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 4 Damage.
+Crit: !C! %
+Critical hit deals 5(7) times as much damage instead of 3 times.</td>
+  </tr>
+  
+  <tr>
+    <td>Rocket Jump</td>
+    <td><a href="card-images/RocketJump.png"><img src="small-card-images/RocketJump.png" height="298"></a></td>
+    <td><a href="card-images/RocketJumpPlus.png"><img src="small-card-images/RocketJumpPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 11(12) damage.
+Shuffle 3 Burns into your discard pile.
+Draw 4(5) cards.</td>
+  </tr>
+  
+  <tr>
+    <td>Run And Gun</td>
+    <td><a href="card-images/RunAndGun.png"><img src="small-card-images/RunAndGun.png" height="298"></a></td>
+    <td><a href="card-images/RunAndGunPlus.png"><img src="small-card-images/RunAndGunPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 5(7) damage,
+Crit: !C! %
+Draw 2 cards.</td>
+  </tr>
+  
+  <tr>
+    <td>Silver Bullet</td>
+    <td><a href="card-images/SilverBullet.png"><img src="small-card-images/SilverBullet.png" height="298"></a></td>
+    <td><a href="card-images/SilverBulletPlus.png"><img src="small-card-images/SilverBulletPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Lose 3 HP.
+Deal 20(24) damage.
+Crit: !C! %
+If this deals Critical hit, heal 15 HP.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>UV Laser</td>
+    <td><a href="card-images/UVLaser.png"><img src="small-card-images/UVLaser.png" height="298"></a></td>
+    <td><a href="card-images/UVLaserPlus.png"><img src="small-card-images/UVLaserPlus.png" height="298"></a></td>
+    <td>Common</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 8(10) Silent Damage to ALL enemies.
+Gain 2 Weak.</td>
+  </tr>
+  
+  <tr>
+    <td>Acid Bottle</td>
+    <td><a href="card-images/AcidBottle.png"><img src="small-card-images/AcidBottle.png" height="298"></a></td>
+    <td><a href="card-images/AcidBottlePlus.png"><img src="small-card-images/AcidBottlePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Apply 2(3) Corrosion to an enemy.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Aggression</td>
+    <td><a href="card-images/Aggression.png"><img src="small-card-images/Aggression.png" height="298"></a></td>
+    <td><a href="card-images/AggressionPlus.png"><img src="small-card-images/AggressionPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Every time you become Vulnerable, remove the effect and ALL creatures (including you) gain 2(3) Strength for this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Anti Flame</td>
+    <td><a href="card-images/AntiFlame.png"><img src="small-card-images/AntiFlame.png" height="298"></a></td>
+    <td><a href="card-images/AntiFlamePlus.png"><img src="small-card-images/AntiFlamePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 17(22) Block.
+Shuffle 3 Burns into your discard pile.
+Discard ALL Burns.</td>
+  </tr>
+  
+  <tr>
+    <td>Assasinate</td>
+    <td><a href="card-images/Assasinate.png"><img src="small-card-images/Assasinate.png" height="298"></a></td>
+    <td><a href="card-images/AssasinatePlus.png"><img src="small-card-images/AssasinatePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 38(46) Silent Damage.
+Lose 1 Strength 3 times.</td>
+  </tr>
+  
+  <tr>
+    <td>Concentrate</td>
+    <td><a href="card-images/Concentrate.png"><img src="small-card-images/Concentrate.png" height="298"></a></td>
+    <td><a href="card-images/ConcentratePlus.png"><img src="small-card-images/ConcentratePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Gain 1 Concentrated.
+Draw 3(4) cards.
+You cannot draw any more cards this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Corrosive Grenade</td>
+    <td><a href="card-images/CorrosiveGrenade.png"><img src="small-card-images/CorrosiveGrenade.png" height="298"></a></td>
+    <td><a href="card-images/CorrosiveGrenadePlus.png"><img src="small-card-images/CorrosiveGrenadePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 3(4) Damage and apply 2(3) Corrosion to ALL enemies.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Counter Strike</td>
+    <td><a href="card-images/CounterStrike.png"><img src="small-card-images/CounterStrike.png" height="298"></a></td>
+    <td><a href="card-images/CounterStrikePlus.png"><img src="small-card-images/CounterStrikePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>1</td>
+    <td>Every time you lose Strength or Dexterity, deal 3(4) damage to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Critical Decision</td>
+    <td><a href="card-images/CriticalDecision.png"><img src="small-card-images/CriticalDecision.png" height="298"></a></td>
+    <td><a href="card-images/CriticalDecisionPlus.png"><img src="small-card-images/CriticalDecisionPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Ethereal.
+Draw 3(5) cards for every Critical hit you've dealt this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Crossbow</td>
+    <td><a href="card-images/Crossbow.png"><img src="small-card-images/Crossbow.png" height="298"></a></td>
+    <td><a href="card-images/CrossbowPlus.png"><img src="small-card-images/CrossbowPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Deal 3(4) Silent damage and apply 1(2) Frail twice.
+Crit: !C! %</td>
+  </tr>
+  
+  <tr>
+    <td>Defibrilator</td>
+    <td><a href="card-images/Defibrilator.png"><img src="small-card-images/Defibrilator.png" height="298"></a></td>
+    <td><a href="card-images/DefibrilatorPlus.png"><img src="small-card-images/DefibrilatorPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>(Innate.)
+ Lose 18(11) HP.
+Gain 6 Regen.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Electric Blood</td>
+    <td><a href="card-images/ElectricBlood.png"><img src="small-card-images/ElectricBlood.png" height="298"></a></td>
+    <td><a href="card-images/ElectricBloodPlus.png"><img src="small-card-images/ElectricBloodPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Gain [R] ([R]).
+Lose 10 HP.
+Deal 1 damage to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Electric Grenade</td>
+    <td><a href="card-images/ElectricGrenade.png"><img src="small-card-images/ElectricGrenade.png" height="298"></a></td>
+    <td><a href="card-images/ElectricGrenadePlus.png"><img src="small-card-images/ElectricGrenadePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 9(12) Damage to ALL enemies.
+Next turn, gain [R] [R] .</td>
+  </tr>
+  
+  <tr>
+    <td>Explosives Expert</td>
+    <td><a href="card-images/ExplosivesExpert.png"><img src="small-card-images/ExplosivesExpert.png" height="298"></a></td>
+    <td><a href="card-images/ExplosivesExpertPlus.png"><img src="small-card-images/ExplosivesExpertPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>Every time you use a Grenade, draw 2(3) cards.</td>
+  </tr>
+  
+  <tr>
+    <td>Extended Magazines</td>
+    <td><a href="card-images/ExtendedMagazines.png"><img src="small-card-images/ExtendedMagazines.png" height="298"></a></td>
+    <td><a href="card-images/ExtendedMagazinesPlus.png"><img src="small-card-images/ExtendedMagazinesPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Draw 2(3) cards.
+If you have at most 1 Skill in your hand, Gain [R].</td>
+  </tr>
+  
+  <tr>
+    <td>Firepower</td>
+    <td><a href="card-images/Firepower.png"><img src="small-card-images/Firepower.png" height="298"></a></td>
+    <td><a href="card-images/FirepowerPlus.png"><img src="small-card-images/FirepowerPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2(1)</td>
+    <td>Every time you gain Burning, remove that effect and apply that much Burning to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>First Aid Kit</td>
+    <td><a href="card-images/FirstAidKit.png"><img src="small-card-images/FirstAidKit.png" height="298"></a></td>
+    <td><a href="card-images/FirstAidKitPlus.png"><img src="small-card-images/FirstAidKitPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Heal ALL HP lost this turn.
+Shuffle 2 (Upgraded) Painkillers into your draw pile.</td>
+  </tr>
+  
+  <tr>
+    <td>Flamethrower</td>
+    <td><a href="card-images/Flamethrower.png"><img src="small-card-images/Flamethrower.png" height="298"></a></td>
+    <td><a href="card-images/FlamethrowerPlus.png"><img src="small-card-images/FlamethrowerPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>X</td>
+    <td>Apply 3(4) Burning to ALL enemies X times.</td>
+  </tr>
+  
+  <tr>
+    <td>Flammable Fumes</td>
+    <td><a href="card-images/FlammableFumes.png"><img src="small-card-images/FlammableFumes.png" height="298"></a></td>
+    <td><a href="card-images/FlammableFumesPlus.png"><img src="small-card-images/FlammableFumesPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>At the end of every turn, increase ALL Burning by 4(6)</td>
+  </tr>
+  
+  <tr>
+    <td>Flare Gun</td>
+    <td><a href="card-images/FlareGun.png"><img src="small-card-images/FlareGun.png" height="298"></a></td>
+    <td><a href="card-images/FlareGunPlus.png"><img src="small-card-images/FlareGunPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td></td>
+    <td>Unplayable.
+When drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies (, Draw 1 card).</td>
+  </tr>
+  
+  <tr>
+    <td>Foresight</td>
+    <td><a href="card-images/Foresight.png"><img src="small-card-images/Foresight.png" height="298"></a></td>
+    <td><a href="card-images/ForesightPlus.png"><img src="small-card-images/ForesightPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 11(15) Block.
+Place a card from your discard pile on top of your draw pile.</td>
+  </tr>
+  
+  <tr>
+    <td>Frag Grenade</td>
+    <td><a href="card-images/FragGrenade.png"><img src="small-card-images/FragGrenade.png" height="298"></a></td>
+    <td><a href="card-images/FragGrenadePlus.png"><img src="small-card-images/FragGrenadePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 7(8) Damage to ALL enemies. Deal 2 Silent Damage to a random enemy 7(10) times.</td>
+  </tr>
+  
+  <tr>
+    <td>Fragile Blood</td>
+    <td><a href="card-images/FragileBlood.png"><img src="small-card-images/FragileBlood.png" height="298"></a></td>
+    <td><a href="card-images/FragileBloodPlus.png"><img src="small-card-images/FragileBloodPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>0</td>
+    <td>Gain 4(5) Regen.
+Apply 4(5) Thorns to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Frying Pan</td>
+    <td><a href="card-images/FryingPan.png"><img src="small-card-images/FryingPan.png" height="298"></a></td>
+    <td><a href="card-images/FryingPanPlus.png"><img src="small-card-images/FryingPanPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>1</td>
+    <td>Retain.
+If you have 0 Block, gain 7(9) Block. Otherwise deal 8(10) damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Gamma Ray</td>
+    <td><a href="card-images/GammaRay.png"><img src="small-card-images/GammaRay.png" height="298"></a></td>
+    <td><a href="card-images/GammaRayPlus.png"><img src="small-card-images/GammaRayPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Deal 5(6) damage twice.
+Crit: !C! %
+If this deals 2 critical hits, the second one deals 9 times as much damage.</td>
+  </tr>
+  
+  <tr>
+    <td>Grenade Launcher</td>
+    <td><a href="card-images/GrenadeLauncher.png"><img src="small-card-images/GrenadeLauncher.png" height="298"></a></td>
+    <td><a href="card-images/GrenadeLauncherPlus.png"><img src="small-card-images/GrenadeLauncherPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>(Retain.)
+ Use and Exhaust a Grenade from your draw pile, discard pile or hand.</td>
+  </tr>
+  
+  <tr>
+    <td>Guilt</td>
+    <td><a href="card-images/Guilt.png"><img src="small-card-images/Guilt.png" height="298"></a></td>
+    <td><a href="card-images/GuiltPlus.png"><img src="small-card-images/GuiltPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>(Innate.)
+ At the start of every turn, gain [R] [R] ([R]).
+Every time you play an Attack, lose 2 Strength for one turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Hand Claws</td>
+    <td><a href="card-images/HandClaws.png"><img src="small-card-images/HandClaws.png" height="298"></a></td>
+    <td><a href="card-images/HandClawsPlus.png"><img src="small-card-images/HandClawsPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Lose 6 HP.
+Add 5(7) Shivs to your hand.
+(Affected by damage modifiers.)</td>
+  </tr>
+  
+  <tr>
+    <td>Heavy Shotgun</td>
+    <td><a href="card-images/HeavyShotgun.png"><img src="small-card-images/HeavyShotgun.png" height="298"></a></td>
+    <td><a href="card-images/HeavyShotgunPlus.png"><img src="small-card-images/HeavyShotgunPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Expose yourself.
+Deal 4(5) Damage to random enemy 4 times. Crit: !C! %
+Discard random card for every Critical hit.</td>
+  </tr>
+  
+  <tr>
+    <td>Hideout</td>
+    <td><a href="card-images/Hideout.png"><img src="small-card-images/Hideout.png" height="298"></a></td>
+    <td><a href="card-images/HideoutPlus.png"><img src="small-card-images/HideoutPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Gain 7(10) Block for every Critical hit you've dealt this turn.
+Next turn draw 1 card less.</td>
+  </tr>
+  
+  <tr>
+    <td>Ignite</td>
+    <td><a href="card-images/Ignite.png"><img src="small-card-images/Ignite.png" height="298"></a></td>
+    <td><a href="card-images/IgnitePlus.png"><img src="small-card-images/IgnitePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>This turn, whenever you deal unblocked Attack damage, apply 2 Burning.</td>
+  </tr>
+  
+  <tr>
+    <td>Insulation</td>
+    <td><a href="card-images/Insulation.png"><img src="small-card-images/Insulation.png" height="298"></a></td>
+    <td><a href="card-images/InsulationPlus.png"><img src="small-card-images/InsulationPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Retain.
+Exhaust ALL Burns in your (draw and) discard pile. For each, apply 3(4) Burning to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Kevlar</td>
+    <td><a href="card-images/Kevlar.png"><img src="small-card-images/Kevlar.png" height="298"></a></td>
+    <td><a href="card-images/KevlarPlus.png"><img src="small-card-images/KevlarPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 6(7) Block.
+If you have less than 6(7) Plated Armor, gain 3(4) Plated Armor.</td>
+  </tr>
+  
+  <tr>
+    <td>Lock On</td>
+    <td><a href="card-images/LockOn.png"><img src="small-card-images/LockOn.png" height="298"></a></td>
+    <td><a href="card-images/LockOnPlus.png"><img src="small-card-images/LockOnPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>Expose an enemy.
+Every other enemy gains 99 Block.
+Gain 1 Concentrated.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Nuclear Power</td>
+    <td><a href="card-images/NuclearPower.png"><img src="small-card-images/NuclearPower.png" height="298"></a></td>
+    <td><a href="card-images/NuclearPowerPlus.png"><img src="small-card-images/NuclearPowerPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>X</td>
+    <td>Next turn, gain
+2 X - 3(2) Energy.</td>
+  </tr>
+  
+  <tr>
+    <td>Railgun</td>
+    <td><a href="card-images/Railgun.png"><img src="small-card-images/Railgun.png" height="298"></a></td>
+    <td><a href="card-images/RailgunPlus.png"><img src="small-card-images/RailgunPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>X</td>
+    <td>Deal 4 Damage X times.
+Crit: X times !C! %.</td>
+  </tr>
+  
+  <tr>
+    <td>Save Up</td>
+    <td><a href="card-images/SaveUp.png"><img src="small-card-images/SaveUp.png" height="298"></a></td>
+    <td><a href="card-images/SaveUpPlus.png"><img src="small-card-images/SaveUpPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>(Retain.)
+ Next turn, gain [R] [R] and draw 3 more cards.</td>
+  </tr>
+  
+  <tr>
+    <td>Saw Blade</td>
+    <td><a href="card-images/SawBlade.png"><img src="small-card-images/SawBlade.png" height="298"></a></td>
+    <td><a href="card-images/SawBladePlus.png"><img src="small-card-images/SawBladePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>0</td>
+    <td>Expose yourself.
+Deal 4 Damage to ALL enemies.
+Draw (1 card.
+Draw) a 0-cost card from your draw pile.</td>
+  </tr>
+  
+  <tr>
+    <td>Silver Blood</td>
+    <td><a href="card-images/SilverBlood.png"><img src="small-card-images/SilverBlood.png" height="298"></a></td>
+    <td><a href="card-images/SilverBloodPlus.png"><img src="small-card-images/SilverBloodPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>ALL enemies gain 2(1) Strength. Every time you lose HP, gain 1 Regen.</td>
+  </tr>
+  
+  <tr>
+    <td>Skin = Skill</td>
+    <td><a href="card-images/Skin=Skill.png"><img src="small-card-images/Skin=Skill.png" height="298"></a></td>
+    <td><a href="card-images/Skin=SkillPlus.png"><img src="small-card-images/Skin=SkillPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 13(17) Block.
+Upgrade 2 random (ALL) Attacks in your hand for the rest of combat.</td>
+  </tr>
+  
+  <tr>
+    <td>Smoke Grenade</td>
+    <td><a href="card-images/SmokeGrenade.png"><img src="small-card-images/SmokeGrenade.png" height="298"></a></td>
+    <td><a href="card-images/SmokeGrenadePlus.png"><img src="small-card-images/SmokeGrenadePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1(0)</td>
+    <td>Apply 2 Weak to ALL enemies.
+Lose 20 Precision.</td>
+  </tr>
+  
+  <tr>
+    <td>Sniper Rifle</td>
+    <td><a href="card-images/SniperRifle.png"><img src="small-card-images/SniperRifle.png" height="298"></a></td>
+    <td><a href="card-images/SniperRiflePlus.png"><img src="small-card-images/SniperRiflePlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 22(24) damage.
+Crit: !C! %
+If this deals Critical hit, copy this card into your draw pile.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Steel Blood</td>
+    <td><a href="card-images/SteelBlood.png"><img src="small-card-images/SteelBlood.png" height="298"></a></td>
+    <td><a href="card-images/SteelBloodPlus.png"><img src="small-card-images/SteelBloodPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>Lose 6 HP.
+Gain 3(5) Metalicize.</td>
+  </tr>
+  
+  <tr>
+    <td>Tactical Shotgun</td>
+    <td><a href="card-images/TacticalShotgun.png"><img src="small-card-images/TacticalShotgun.png" height="298"></a></td>
+    <td><a href="card-images/TacticalShotgunPlus.png"><img src="small-card-images/TacticalShotgunPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Attack</td>
+    <td>2</td>
+    <td>Expose yourself.
+Deal 2 Damage to random enemy 6 times. Crit: !C! %
+Draw a card for every Critical hit.</td>
+  </tr>
+  
+  <tr>
+    <td>The Law</td>
+    <td><a href="card-images/TheLaw.png"><img src="small-card-images/TheLaw.png" height="298"></a></td>
+    <td><a href="card-images/TheLawPlus.png"><img src="small-card-images/TheLawPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Skill</td>
+    <td>1</td>
+    <td>(Innate.)
+ Retain.
+Remove ALL effects affecting damage from ALL creatures.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Tracers</td>
+    <td><a href="card-images/Tracers.png"><img src="small-card-images/Tracers.png" height="298"></a></td>
+    <td><a href="card-images/TracersPlus.png"><img src="small-card-images/TracersPlus.png" height="298"></a></td>
+    <td>Uncommon</td>
+    <td>Power</td>
+    <td>2</td>
+    <td>Every time you play an Attack, gain 5(8) Precision.</td>
+  </tr>
+  
+  <tr>
+    <td>Ammo Box</td>
+    <td><a href="card-images/AmmoBox.png"><img src="small-card-images/AmmoBox.png" height="298"></a></td>
+    <td><a href="card-images/AmmoBoxPlus1.png"><img src="small-card-images/AmmoBoxPlus1.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Draw 3(4) cards.
+This card cost 1 more energy for this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Automatic Mode</td>
+    <td><a href="card-images/AutomaticMode.png"><img src="small-card-images/AutomaticMode.png" height="298"></a></td>
+    <td><a href="card-images/AutomaticModePlus.png"><img src="small-card-images/AutomaticModePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Gain [R] [R].
+Put 3(2) Burns into your discard pile.
+Can be only played as a first card this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Battery Acid</td>
+    <td><a href="card-images/BatteryAcid.png"><img src="small-card-images/BatteryAcid.png" height="298"></a></td>
+    <td><a href="card-images/BatteryAcidPlus.png"><img src="small-card-images/BatteryAcidPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Gain [R] [R] [R] ([R]).
+Gain 1 Corrosion.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Black Powder</td>
+    <td><a href="card-images/BlackPowder.png"><img src="small-card-images/BlackPowder.png" height="298"></a></td>
+    <td><a href="card-images/BlackPowderPlus.png"><img src="small-card-images/BlackPowderPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>2(1)</td>
+    <td>Every time a card is exhausted, shuffle HE Grenade into your draw pile.</td>
+  </tr>
+  
+  <tr>
+    <td>Blast Shields</td>
+    <td><a href="card-images/BlastShields.png"><img src="small-card-images/BlastShields.png" height="298"></a></td>
+    <td><a href="card-images/BlastShieldsPlus.png"><img src="small-card-images/BlastShieldsPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>3</td>
+    <td>Every time you use a Grenade, gain 7(10) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Cluster Grenade</td>
+    <td><a href="card-images/ClusterGrenade.png"><img src="small-card-images/ClusterGrenade.png" height="298"></a></td>
+    <td><a href="card-images/ClusterGrenadePlus.png"><img src="small-card-images/ClusterGrenadePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>X</td>
+    <td>Deal 4(6) Damage to ALL enemies X+1 times.
+If X is more than 0, gain [R] .</td>
+  </tr>
+  
+  <tr>
+    <td>Eye For An Eye</td>
+    <td><a href="card-images/EyeForAnEye.png"><img src="small-card-images/EyeForAnEye.png" height="298"></a></td>
+    <td><a href="card-images/EyeForAnEyePlus.png"><img src="small-card-images/EyeForAnEyePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>3</td>
+    <td>Every time you lose HP, deal that (2 times as) much damage to a random enemy.</td>
+  </tr>
+  
+  <tr>
+    <td>Firewall</td>
+    <td><a href="card-images/Firewall.png"><img src="small-card-images/Firewall.png" height="298"></a></td>
+    <td><a href="card-images/FirewallPlus.png"><img src="small-card-images/FirewallPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Gain 12(10) Burning.
+Next turn, Gain 30(40) Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Friendly Fire</td>
+    <td><a href="card-images/FriendlyFire.png"><img src="small-card-images/FriendlyFire.png" height="298"></a></td>
+    <td><a href="card-images/FriendlyFirePlus.png"><img src="small-card-images/FriendlyFirePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>3(2)</td>
+    <td>For every Burning damage you deal, gain that much Block.</td>
+  </tr>
+  
+  <tr>
+    <td>Gasoline</td>
+    <td><a href="card-images/Gasoline.png"><img src="small-card-images/Gasoline.png" height="298"></a></td>
+    <td><a href="card-images/GasolinePlus.png"><img src="small-card-images/GasolinePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>2</td>
+    <td>Triple (Quadruple) ALL Burning.
+Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>Ghost Form</td>
+    <td><a href="card-images/GhostForm.png"><img src="small-card-images/GhostForm.png" height="298"></a></td>
+    <td><a href="card-images/GhostFormPlus.png"><img src="small-card-images/GhostFormPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>1(0)</td>
+    <td>Gain 2 Intangible.
+ALL cards become Ethereal.</td>
+  </tr>
+  
+  <tr>
+    <td>Lucky Mode</td>
+    <td><a href="card-images/LuckyMode.png"><img src="small-card-images/LuckyMode.png" height="298"></a></td>
+    <td><a href="card-images/LuckyModePlus.png"><img src="small-card-images/LuckyModePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>Gain 1 Weak.
+Gain 35(50) Precision.
+Can be only played as a first card this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Minigun</td>
+    <td><a href="card-images/Minigun.png"><img src="small-card-images/Minigun.png" height="298"></a></td>
+    <td><a href="card-images/MinigunPlus1.png"><img src="small-card-images/MinigunPlus1.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>3</td>
+    <td>Deal 1 Silent Damage to random enemy 11(15) times. Crit: !C! %
+Ignores Precision.
+Fires once more for every Critical hit.</td>
+  </tr>
+  
+  <tr>
+    <td>Perfect Form</td>
+    <td><a href="card-images/PerfectForm.png"><img src="small-card-images/PerfectForm.png" height="298"></a></td>
+    <td><a href="card-images/PerfectFormPlus.png"><img src="small-card-images/PerfectFormPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>4</td>
+    <td>Ethereal.
+Whenever you deal a Critical hit, play the card again.
+Works 2(3) times per turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Rocket Launcher</td>
+    <td><a href="card-images/RocketLauncher.png"><img src="small-card-images/RocketLauncher.png" height="298"></a></td>
+    <td><a href="card-images/RocketLauncherPlus.png"><img src="small-card-images/RocketLauncherPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>4</td>
+    <td>Deal 30(36) damage.
+Crit: !C! %
+Apply 3(4) Burning to ALL enemies.</td>
+  </tr>
+  
+  <tr>
+    <td>Stealth Mode</td>
+    <td><a href="card-images/StealthMode.png"><img src="small-card-images/StealthMode.png" height="298"></a></td>
+    <td><a href="card-images/StealthModePlus.png"><img src="small-card-images/StealthModePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Skill</td>
+    <td>0</td>
+    <td>(Innate.)
+ Gain 1 Intangible.
+Lose 1 Strength.
+Can be only played as a first card this turn.</td>
+  </tr>
+  
+  <tr>
+    <td>Veteran</td>
+    <td><a href="card-images/Veteran.png"><img src="small-card-images/Veteran.png" height="298"></a></td>
+    <td><a href="card-images/VeteranPlus.png"><img src="small-card-images/VeteranPlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Power</td>
+    <td>0</td>
+    <td>Innate.
+Lose 2(1) Strength.
+Every turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength.</td>
+  </tr>
+  
+  <tr>
+    <td>Void Grenade</td>
+    <td><a href="card-images/VoidGrenade.png"><img src="small-card-images/VoidGrenade.png" height="298"></a></td>
+    <td><a href="card-images/VoidGrenadePlus.png"><img src="small-card-images/VoidGrenadePlus.png" height="298"></a></td>
+    <td>Rare</td>
+    <td>Attack</td>
+    <td>4</td>
+    <td>Deal 5(8) Damage to ALL enemies. Play ALL Grenades from your draw (and discard) pile(s).
+Lose 5 HP.</td>
+  </tr>
+  
+</table>
+    
+
+    
+    <h1>The Marksman relics</h1>
+    <table class="sortable">
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Tier</th>
+    <th>Pool</th>
+    <th>Description</th>
+    <th>Flavor</th>
+  </tr>
+  
+  <tr>
+    <td><a href="relics/popup/RustyMagazine.png">Rusty Magazine</a></td>
+    <td><img src="relics/RustyMagazine.png" width="128" height="128"><a href="relics/popup/RustyMagazine.png"><img src="relics/small-popup/RustyMagazine.png" class="popup"></a></td>
+    <td>Starter</td>
+    <td>Black</td>
+    <td>At the start of each combat, <span class="color-y">Upgrade</span> ALL <span class="color-y">Rusty</span> <span class="color-y">Handguns</span> in your deck.</td>
+    <td>Rusty magazine for your Rusty Handgun.</td>
+  </tr>
+  
+  <tr>
+    <td><a href="relics/popup/RumBottle.png">Rum Bottle</a></td>
+    <td><img src="relics/RumBottle.png" width="128" height="128"><a href="relics/popup/RumBottle.png"><img src="relics/small-popup/RumBottle.png" class="popup"></a></td>
+    <td>Common</td>
+    <td>Black</td>
+    <td>At the start of each turn, gain <span class="color-b">1</span> <span class="color-y">Concentrated</span> and lose <span class="color-b">5</span> <span class="color-y">Precision.</span></td>
+    <td>Tasty alcoholic bevrage.</td>
+  </tr>
+  
+  <tr>
+    <td><a href="relics/popup/ScaleOfInjustice.png">Scales Of Injustice</a></td>
+    <td><img src="relics/ScaleOfInjustice.png" width="128" height="128"><a href="relics/popup/ScaleOfInjustice.png"><img src="relics/small-popup/ScaleOfInjustice.png" class="popup"></a></td>
+    <td>Boss</td>
+    <td></td>
+    <td>At the start of each turn, gain 1 energy. At the end of each turn, deal <span class="color-b">6</span> damage to the creature with lowest <span class="color-y">HP.</span> (Including you)</td>
+    <td>If world wasn't unfair enough.</td>
+  </tr>
+  
+  <tr>
+    <td><a href="relics/popup/TrustyMagazine.png">Trusty Magazine</a></td>
+    <td><img src="relics/TrustyMagazine.png" width="128" height="128"><a href="relics/popup/TrustyMagazine.png"><img src="relics/small-popup/TrustyMagazine.png" class="popup"></a></td>
+    <td>Boss</td>
+    <td>Black</td>
+    <td>Replaces <span class="color-b">Rusty</span> <span class="color-b">Magazine.</span> <span class="color-y">Transform</span> ALL <span class="color-y">Rusty</span> <span class="color-y">Handguns</span> to <span class="color-g">Trusty</span> <span class="color-g">Handguns.</span></td>
+    <td>Trusty magazine for your Trusty Handgun.</td>
+  </tr>
+  
+</table>
+    
+
+    
+
+    
+    <h1>The Marksman keywords</h1>
+    <table class="sortable">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>burning</td>
+    <td>Burning creatures take damage at the end of their turn. Each turn, Burning is decreased by the amount Blocked. Also lowers Transient's damage.</td>
+  </tr>
+  
+  <tr>
+    <td>concentrated</td>
+    <td>Doubles <span class="color-y">Crit</span> for one turn.</td>
+  </tr>
+  
+  <tr>
+    <td>corrosion</td>
+    <td>At the end of turn, removes all Block and decreases Corrosion by <span class="color-b">1.</span></td>
+  </tr>
+  
+  <tr>
+    <td>crit</td>
+    <td>Chance of single hit dealing <span class="color-y">TRIPLE</span> Damage.</td>
+  </tr>
+  
+  <tr>
+    <td>expose</td>
+    <td>If target isn't <span class="color-y">Vulnerable,</span> apply <span class="color-b">1</span> <span class="color-y">Vulnerable.</span></td>
+  </tr>
+  
+  <tr>
+    <td>grenade</td>
+    <td>Grenades are cards, which attack ALL enemies and have <span class="color-y">Grenade</span> in their name.</td>
+  </tr>
+  
+  <tr>
+    <td>painkillers</td>
+    <td>Painkillers are <span class="color-b">0</span> cost Skills which heal a portion of your HP and Exhaust.</td>
+  </tr>
+  
+  <tr>
+    <td>precision</td>
+    <td>Increases <span class="color-y">Crit</span> of all attacks with <span class="color-y">Crit.</span> Removed at the end of turn.</td>
+  </tr>
+  
+  <tr>
+    <td>silent damage</td>
+    <td>This damage is NOT considered as <span class="color-y">Attack</span> damage. That means it is not affected by <span class="color-y">Strength,</span> <span class="color-y">Weakness</span> or <span class="color-y">Vulnerable.</span>
+It also doesn't trigger <span class="color-y">Thorns,</span> <span class="color-y">Curl</span> <span class="color-y">Up,</span> etc.</td>
+  </tr>
+  
+</table>
+    
+
+    
+    <h1>The Marksman creatures</h1>
+    <table class="sortable">
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+  </tr>
+  
+  <tr>
+    <td>The Marksman</td>
+    <td><img src="creatures/TheMarksman.png"></td>
+  </tr>
+  
+</table>
+    
   </body>
 </html>
