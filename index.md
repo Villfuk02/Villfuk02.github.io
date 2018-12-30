@@ -7,16 +7,16 @@
 | Defend | ![](small-card-images/Defend.png) | ![](small-card-images/DefendPlus.png) | Basic | Skill | 1 | Gain 4(6) Block. |
 | Rusty Handgun | ![](small-card-images/RustyHandgun.png) | ![](small-card-images/RustyHandgunPlus.png) | Basic | Attack | 1 | Deal 4 Damage. Crit: !C! % If this Crits, Exhaust. |
 | Strike | ![](small-card-images/Strike.png) | ![](small-card-images/StrikePlus.png) | Basic | Attack | 1 | Deal 5(7) Damage. |
-| Stun Grenade | ![](small-card-images/StunGrenade.png) | ![](small-card-images/StunGrenadePlus.png) | Basic | Attack | 3 | (Innate.)  Deal 3(6) Damage and apply 3(4) Weak and Vulnerable to ALL enemies. Exhaust. |
+| Stun Grenade | ![](small-card-images/StunGrenade.png) | ![](small-card-images/StunGrenadePlus.png) | Basic | Attack | 3 | Stun ALL enemies and apply 2(3) Weak and Vulnerable to ALL enemies. Exhaust. |
 | Trusty Handgun | ![](small-card-images/TrustyHandgun.png) | ![](small-card-images/TrustyHandgunPlus.png) | Basic | Attack | 1 | Deal 4(5) Damage. Crit: !C! % |
 | Backup Plan | ![](small-card-images/BackupPlan.png) | ![](small-card-images/BackupPlanPlus.png) | Common | Skill | 0 | (Retain.)  Choose 1 card from your draw pile and place it into your hand. Exhaust. |
 | Bayonet | ![](small-card-images/Bayonet.png) | ![](small-card-images/BayonetPlus.png) | Common | Attack | 0 | Expose yourself. Deal 7(9) damage for every Critical hit this turn. Exhaust. (not Exhaust.) |
-| Bow | ![](small-card-images/Bow.png) | ![](small-card-images/BowPlus.png) | Common | Attack | 1 | Deal 8(10) Silent damage. Crit: !C! % Lose 1 Strength. |
+| Bow | ![](small-card-images/Bow.png) | ![](small-card-images/BowPlus.png) | Common | Attack | 1 | Deal 6(8) Silent damage. Crit: !C! % Lose 1 Strength. |
 | Burst Fire | ![](small-card-images/BurstFire.png) | ![](small-card-images/BurstFirePlus.png) | Common | Attack | 2 | Deal 4 Damage 3(4) times. Crit: !C! % Lose 10 Precision for every Critical hit. |
 | Calculated | ![](small-card-images/Calculated.png) | ![](small-card-images/CalculatedPlus.png) | Common | Skill | 1 | Gain 20(30) Precision. Draw 2 cards. Discard 2 cards. |
-| Camouflage | ![](small-card-images/Camouflage.png) | ![](small-card-images/CamouflagePlus.png) | Common | Skill | 2 | Gain 14(18) Block. |
+| Camouflage | ![](small-card-images/Camouflage.png) | ![](small-card-images/CamouflagePlus.png) | Common | Skill | 2 | Gain 12(16) Block. |
 | Chainsaw | ![](small-card-images/Chainsaw.png) | ![](small-card-images/ChainsawPlus.png) | Common | Attack | 0 | Expose yourself. Deal 6 Damage. Draw a 0-cost card from your draw pile.  (If there are none, shuffle your discard into your draw pile.) |
-| Combat Trousers | ![](small-card-images/CombatTrousers.png) | ![](small-card-images/CombatTrousersPlus.png) | Common | Skill | 1 | Gain 8(10) Block. Discard 1 random card, then Retain 1 random card. |
+| Combat Trousers | ![](small-card-images/CombatTrousers.png) | ![](small-card-images/CombatTrousersPlus.png) | Common | Skill | 1 | Gain 9(12) Block. Discard 1 random card, then Retain 1 random card. |
 | Decoy | ![](small-card-images/Decoy.png) | ![](small-card-images/DecoyPlus.png) | Common | Skill | 1 | Expose yourself. Gain 11(15) Block. |
 | Expect Anything | ![](small-card-images/ExpectAnything.png) | ![](small-card-images/ExpectAnythingPlus.png) | Common | Skill | 1 | Innate. Ethereal. Gain 10(14) Block. Exhaust. |
 | Golden Bullet | ![](small-card-images/GoldenBullet.png) | ![](small-card-images/GoldenBulletPlus.png) | Common | Attack | 2 | Spend 8 Gold. Deal 20(24) damage. Crit: !C! % If this deals Critical hit, Gain 40 Gold. Exhaust. |
@@ -32,11 +32,11 @@
 | Rocket Jump | ![](small-card-images/RocketJump.png) | ![](small-card-images/RocketJumpPlus.png) | Common | Attack | 1 | Deal 11(12) damage. Shuffle 3 Burns into your discard pile. Draw 4(5) cards. |
 | Run And Gun | ![](small-card-images/RunAndGun.png) | ![](small-card-images/RunAndGunPlus.png) | Common | Attack | 1 | Deal 5(7) damage, Crit: !C! % Draw 2 cards. |
 | Silver Bullet | ![](small-card-images/SilverBullet.png) | ![](small-card-images/SilverBulletPlus.png) | Common | Attack | 2 | Lose 3 HP. Deal 20(24) damage. Crit: !C! % If this deals Critical hit, heal 15 HP. Exhaust. |
-| UV Laser | ![](small-card-images/UVLaser.png) | ![](small-card-images/UVLaserPlus.png) | Common | Attack | 1 | Deal 8(10) Silent Damage to ALL enemies. Gain 2 Weak. |
+| UV Laser | ![](small-card-images/UVLaser.png) | ![](small-card-images/UVLaserPlus.png) | Common | Attack | 1 | Deal 7(9) Silent Damage to ALL enemies. Gain 2 Weak. |
 | Acid Bottle | ![](small-card-images/AcidBottle.png) | ![](small-card-images/AcidBottlePlus.png) | Uncommon | Skill | 1 | Apply 2(3) Corrosion to an enemy. Exhaust. |
 | Aggression | ![](small-card-images/Aggression.png) | ![](small-card-images/AggressionPlus.png) | Uncommon | Power | 1 | Every time you become Vulnerable, remove the effect and ALL creatures (including you) gain 2(3) Strength for this turn. |
 | Anti Flame | ![](small-card-images/AntiFlame.png) | ![](small-card-images/AntiFlamePlus.png) | Uncommon | Skill | 2 | Gain 17(22) Block. Shuffle 3 Burns into your discard pile. Discard ALL Burns. |
-| Assasinate | ![](small-card-images/Assasinate.png) | ![](small-card-images/AssasinatePlus.png) | Uncommon | Attack | 3 | Deal 38(46) Silent Damage. Lose 1 Strength 3 times. |
+| Assasinate | ![](small-card-images/Assasinate.png) | ![](small-card-images/AssasinatePlus.png) | Uncommon | Attack | 3 | Deal 40(50) Silent Damage. Lose 5 Strength. |
 | Concentrate | ![](small-card-images/Concentrate.png) | ![](small-card-images/ConcentratePlus.png) | Uncommon | Skill | 1 | Gain 1 Concentrated. Draw 3(4) cards. You cannot draw any more cards this turn. |
 | Corrosive Grenade | ![](small-card-images/CorrosiveGrenade.png) | ![](small-card-images/CorrosiveGrenadePlus.png) | Uncommon | Attack | 1 | Deal 3(4) Damage and apply 2(3) Corrosion to ALL enemies. Exhaust. |
 | Counter Strike | ![](small-card-images/CounterStrike.png) | ![](small-card-images/CounterStrikePlus.png) | Uncommon | Power | 2 | Innate. Every time you lose Strength, Deal 2(5) Damage to ALL enemies and gain 1 Dexterity. |
@@ -64,7 +64,7 @@
 | Hideout | ![](small-card-images/Hideout.png) | ![](small-card-images/HideoutPlus.png) | Uncommon | Skill | 0 | Gain 7(10) Block for every Critical hit you've dealt this turn. Next turn draw 1 card less. |
 | Ignite | ![](small-card-images/Ignite.png) | ![](small-card-images/IgnitePlus.png) | Uncommon | Skill | 1(0) | This turn, whenever you hit an enemy with an Attack, apply 2 Burning. |
 | Insulation | ![](small-card-images/Insulation.png) | ![](small-card-images/InsulationPlus.png) | Uncommon | Skill | 2 | Retain. Exhaust ALL Burns in your (draw and) discard pile. For each, apply 3(4) Burning to ALL enemies. |
-| Kevlar | ![](small-card-images/Kevlar.png) | ![](small-card-images/KevlarPlus.png) | Uncommon | Skill | 2 | Gain 8(11) Block. If you have less than 8(11) Plated Armor, gain 3(4) Plated Armor. |
+| Kevlar | ![](small-card-images/Kevlar.png) | ![](small-card-images/KevlarPlus.png) | Uncommon | Skill | 2 | Gain 7(10) Block. If you have less than 7(10) Plated Armor, gain 3(4) Plated Armor. |
 | Lock On | ![](small-card-images/LockOn.png) | ![](small-card-images/LockOnPlus.png) | Uncommon | Skill | 1(0) | Expose an enemy. Every other enemy gains 99 Block. Gain 1 Concentrated. Exhaust. |
 | Nuclear Power | ![](small-card-images/NuclearPower.png) | ![](small-card-images/NuclearPowerPlus.png) | Uncommon | Skill | X | Next turn, gain X times 2(3) Energy. |
 | Railgun | ![](small-card-images/Railgun.png) | ![](small-card-images/RailgunPlus.png) | Uncommon | Attack | X | Deal 3 Damage X times. Crit: X times !C! %. |
@@ -79,8 +79,8 @@
 | The Law | ![](small-card-images/TheLaw.png) | ![](small-card-images/TheLawPlus.png) | Uncommon | Skill | 1 | (Innate.)  Retain. Remove ALL Strength, Vulnerable, Weak, Intangible and Slow from ALL creatures (Including you). Exhaust. |
 | Tracers | ![](small-card-images/Tracers.png) | ![](small-card-images/TracersPlus.png) | Uncommon | Power | 2 | Every time you play an Attack, gain 10(15) Precision. |
 | Ammo Box | ![](small-card-images/AmmoBox.png) | ![](small-card-images/AmmoBoxPlus1.png) | Rare | Skill | 0 | Draw 3(4) cards. This card costs 1 more energy for this turn. Infinitely upgradeable. |
-| Automatic Mode | ![](small-card-images/AutomaticMode.png) | ![](small-card-images/AutomaticModePlus.png) | Rare | Skill | 0 | Gain [R] [R]. Put 3(2) Burns into your discard pile. Can be only played as a first card this turn. |
-| Battery Acid | ![](small-card-images/BatteryAcid.png) | ![](small-card-images/BatteryAcidPlus.png) | Rare | Skill | 0 | Gain [R] [R] [R] ([R]). Gain 1 Corrosion. Exhaust. |
+| Automatic Mode | ![](small-card-images/AutomaticMode.png) | ![](small-card-images/AutomaticModePlus.png) | Rare | Skill | 0 | Gain [R] [R] [R]. Put 3(2) Burns into your discard pile. Can be only played as a first card this turn. |
+| Battery Acid | ![](small-card-images/BatteryAcid.png) | ![](small-card-images/BatteryAcidPlus.png) | Rare | Skill | 0 | Gain [R] [R] ([R]). Gain 1 Corrosion. Exhaust. |
 | Black Powder | ![](small-card-images/BlackPowder.png) | ![](small-card-images/BlackPowderPlus.png) | Rare | Power | 2(1) | Every time a card is exhausted, shuffle HE Grenade into your draw pile. |
 | Blast Shields | ![](small-card-images/BlastShields.png) | ![](small-card-images/BlastShieldsPlus.png) | Rare | Power | 3 | Every time you use a Grenade, gain 6(8) Block. |
 | Cluster Grenade | ![](small-card-images/ClusterGrenade.png) | ![](small-card-images/ClusterGrenadePlus.png) | Rare | Attack | X | Deal 4(6) Damage to ALL enemies X+1 times. If X is more than 0, gain [R] . |
@@ -93,7 +93,7 @@
 | Minigun | ![](small-card-images/Minigun.png) | ![](small-card-images/MinigunPlus1.png) | Rare | Attack | 3 | Deal 1 Silent Damage to random enemy 11(15) times. Crit: !C! % Ignores Precision. Fires once more for every Critical hit. Infinitely upgradeable. |
 | Perfect Form | ![](small-card-images/PerfectForm.png) | ![](small-card-images/PerfectFormPlus.png) | Rare | Power | 4 | Ethereal. Whenever you deal a Critical hit, play the card again. Works 2(3) times per turn. |
 | Rocket Launcher | ![](small-card-images/RocketLauncher.png) | ![](small-card-images/RocketLauncherPlus.png) | Rare | Attack | 4 | Deal 30(36) damage. Crit: !C! % Apply 3(4) Burning to ALL enemies. |
-| Stealth Mode | ![](small-card-images/StealthMode.png) | ![](small-card-images/StealthModePlus.png) | Rare | Skill | 0 | (Innate.)  Gain 1 Intangible. Lose 1 Strength. Can be only played as a first card this turn. |
+| Stealth Mode | ![](small-card-images/StealthMode.png) | ![](small-card-images/StealthModePlus.png) | Rare | Skill | 0 | Gain 1 Intangible. Lose 2 Strength. Draw 2(3) Cards. Can be only played as a first card this turn. |
 | Veteran | ![](small-card-images/Veteran.png) | ![](small-card-images/VeteranPlus.png) | Rare | Power | 0 | Innate. Lose 2(1) Strength. Every turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength you gained. |
 | Void Grenade | ![](small-card-images/VoidGrenade.png) | ![](small-card-images/VoidGrenadePlus.png) | Rare | Attack | 4 | Deal 5(8) Damage to ALL enemies. Play ALL Grenades from your draw (and discard) pile(s). Lose 5 HP. |
 

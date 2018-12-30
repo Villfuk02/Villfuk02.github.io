@@ -1,13 +1,13 @@
 {
   "mod": {
     "name": "The Marksman",
-    "version": "0.2.26",
+    "version": "0.3.0",
     "authors": ["Villfuk02","Residualshade"],
     "credits": "",
     "description": "Adds The Marksman as a new playable character and slightly changes how Burns work. Thanks Residualshade for updating the mod and everyone from the StS modding community for all the help!",
     "mts_version": "3.6.0",
     "sts_version": "12-20-2018",
-    "dependencies": ["basemod"],
+    "dependencies": ["basemod","stslib"],
     "optional_dependencies": []
   },
   "cards": [
@@ -81,7 +81,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 3 Damage and apply 3 Weak and Vulnerable to ALL enemies.\nExhaust."
+      "description": "Stun ALL enemies and apply 2 Weak and Vulnerable to ALL enemies.\nExhaust."
     },
     {
       "name": "Stun Grenade+",
@@ -89,7 +89,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "3",
-      "description": "Innate.\nDeal 6 Damage and apply 4 Weak and Vulnerable to ALL enemies.\nExhaust."
+      "description": "Stun ALL enemies and apply 3 Weak and Vulnerable to ALL enemies.\nExhaust."
     },
     {
       "name": "Trusty Handgun",
@@ -145,7 +145,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 Silent damage.\nCrit: !C! %\nLose 1 Strength."
+      "description": "Deal 6 Silent damage.\nCrit: !C! %\nLose 1 Strength."
     },
     {
       "name": "Bow+",
@@ -153,7 +153,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 Silent damage.\nCrit: !C! %\nLose 1 Strength."
+      "description": "Deal 8 Silent damage.\nCrit: !C! %\nLose 1 Strength."
     },
     {
       "name": "Burst Fire",
@@ -193,7 +193,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 14 Block."
+      "description": "Gain 12 Block."
     },
     {
       "name": "Camouflage+",
@@ -201,7 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 18 Block."
+      "description": "Gain 16 Block."
     },
     {
       "name": "Chainsaw",
@@ -225,7 +225,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nDiscard 1 random card, then Retain 1 random card."
+      "description": "Gain 9 Block.\nDiscard 1 random card, then Retain 1 random card."
     },
     {
       "name": "Combat Trousers+",
@@ -233,7 +233,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 10 Block.\nDiscard 1 random card, then Retain 1 random card."
+      "description": "Gain 12 Block.\nDiscard 1 random card, then Retain 1 random card."
     },
     {
       "name": "Decoy",
@@ -481,7 +481,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 Silent Damage to ALL enemies.\nGain 2 Weak."
+      "description": "Deal 7 Silent Damage to ALL enemies.\nGain 2 Weak."
     },
     {
       "name": "UV Laser+",
@@ -489,7 +489,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 Silent Damage to ALL enemies.\nGain 2 Weak."
+      "description": "Deal 9 Silent Damage to ALL enemies.\nGain 2 Weak."
     },
     {
       "name": "Acid Bottle",
@@ -545,7 +545,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 38 Silent Damage.\nLose 1 Strength 3 times."
+      "description": "Deal 40 Silent Damage.\nLose 5 Strength."
     },
     {
       "name": "Assasinate+",
@@ -553,7 +553,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 46 Silent Damage.\nLose 1 Strength 3 times."
+      "description": "Deal 50 Silent Damage.\nLose 5 Strength."
     },
     {
       "name": "Concentrate",
@@ -993,7 +993,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 8 Block.\nIf you have less than 8 Plated Armor, gain 3 Plated Armor."
+      "description": "Gain 7 Block.\nIf you have less than 7 Plated Armor, gain 3 Plated Armor."
     },
     {
       "name": "Kevlar+",
@@ -1001,7 +1001,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 11 Block.\nIf you have less than 11 Plated Armor, gain 4 Plated Armor."
+      "description": "Gain 10 Block.\nIf you have less than 10 Plated Armor, gain 4 Plated Armor."
     },
     {
       "name": "Lock On",
@@ -1185,7 +1185,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nRemove ALL Strength, Vulnerable, Weak, Intangible and Slow from ALL creatures (Including you).\nExhaust."
+      "description": "Retain.\nRemove ALL Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
     },
     {
       "name": "The Law+",
@@ -1193,7 +1193,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Innate.\nRetain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow from ALL creatures (Including you).\nExhaust."
+      "description": "Innate.\nRetain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
     },
     {
       "name": "Tracers",
@@ -1233,7 +1233,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R].\nPut 3 Burns into your discard pile.\nCan be only played as a first card this turn."
+      "description": "Gain [R] [R] [R].\nPut 3 Burns into your discard pile.\nCan be only played as a first card this turn."
     },
     {
       "name": "Automatic Mode+",
@@ -1241,7 +1241,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R].\nPut 2 Burns into your discard pile.\nCan be only played as a first card this turn."
+      "description": "Gain [R] [R] [R].\nPut 2 Burns into your discard pile.\nCan be only played as a first card this turn."
     },
     {
       "name": "Battery Acid",
@@ -1249,7 +1249,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R] [R] .\nGain 1 Corrosion.\nExhaust."
+      "description": "Gain [R] [R] .\nGain 1 Corrosion.\nExhaust."
     },
     {
       "name": "Battery Acid+",
@@ -1257,7 +1257,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R] [R] [R] .\nGain 1 Corrosion.\nExhaust."
+      "description": "Gain [R] [R] [R] .\nGain 1 Corrosion.\nExhaust."
     },
     {
       "name": "Black Powder",
@@ -1457,7 +1457,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Intangible.\nLose 1 Strength.\nCan be only played as a first card this turn."
+      "description": "Gain 1 Intangible.\nLose 2 Strength.\nDraw 2 Cards.\nCan be only played as a first card this turn."
     },
     {
       "name": "Stealth Mode+",
@@ -1465,7 +1465,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nGain 1 Intangible.\nLose 1 Strength.\nCan be only played as a first card this turn."
+      "description": "Gain 1 Intangible.\nLose 2 Strength.\nDraw 3 Cards.\nCan be only played as a first card this turn."
     },
     {
       "name": "Veteran",
