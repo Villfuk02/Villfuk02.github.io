@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Marksman",
-    "version": "0.2.22",
+    "version": "0.2.24",
     "authors": ["Villfuk02","Residualshade"],
     "credits": "",
     "description": "Adds The Marksman as a new playable character and slightly changes how Burns work. Thanks Residualshade for updating the mod and everyone from the StS modding community for all the help!",
@@ -49,7 +49,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Damage.\nCrit: !C! %\nExhaust."
+      "description": "Deal 4 Damage.\nCrit: !C! %\nIf this Crits, Exhaust."
     },
     {
       "name": "Rusty Handgun+",
@@ -57,7 +57,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Damage.\nCrit: !C! %\nExhaust."
+      "description": "Deal 4 Damage.\nCrit: !C! %\nIf this Crits, Exhaust."
     },
     {
       "name": "Strike",
@@ -137,7 +137,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "0",
-      "description": "Retain.\nExpose yourself.\nDeal 10 damage for every Critical hit this turn.\nExhaust."
+      "description": "Expose yourself.\nDeal 9 damage for every Critical hit this turn."
     },
     {
       "name": "Bow",
@@ -161,7 +161,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 4 Damage 3 times.\nCrit: !C! %\nLose 30 Precision."
+      "description": "Deal 4 Damage 3 times.\nCrit: !C! %\nLose 10 Precision for every Critical hit."
     },
     {
       "name": "Burst Fire+",
@@ -169,7 +169,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 4 Damage 4 times.\nCrit: !C! %\nLose 30 Precision."
+      "description": "Deal 4 Damage 4 times.\nCrit: !C! %\nLose 10 Precision for every Critical hit."
     },
     {
       "name": "Calculated",
@@ -305,7 +305,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 8 Damage.\nCrit: !C! %\nTarget loses 6 HP.\nLose 25 Precision."
+      "description": "Deal 9 Damage.\nTarget loses 6 HP.\nLose 25 Precision."
     },
     {
       "name": "Hand Cannon+",
@@ -313,7 +313,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 10 Damage.\nCrit: !C! %\nTarget loses 8 HP.\nLose 25 Precision."
+      "description": "Deal 12 Damage.\nTarget loses 8 HP.\nLose 25 Precision."
     },
     {
       "name": "Height Advantage",
@@ -385,7 +385,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Expose yourself.\nDeal 3 Damage to random enemy 4 times. Crit: !C! %\nLose 20 Precision for every Critical hit."
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 4 times. Crit: !C! %\nLose 1 Strength for this turn for every Critical hit."
     },
     {
       "name": "Pump Shotgun+",
@@ -393,7 +393,23 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "2",
-      "description": "Expose yourself.\nDeal 3 Damage to random enemy 5 times. Crit: !C! %\nLose 20 Precision for every Critical hit."
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 5 times. Crit: !C! %\nLose 1 Strength for this turn for every Critical hit."
+    },
+    {
+      "name": "Reposition",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nLose 1 Strength for this turn."
+    },
+    {
+      "name": "Reposition+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nLose 1 Strength for this turn."
     },
     {
       "name": "Revolver",
@@ -401,7 +417,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Damage.\nCrit: !C! %\nCritical hit deals 5 times as much damage instead of 3 times."
+      "description": "Deal 3 Damage.\nCrit: !C! %\nCritical hit deals 5 times as much damage instead of 3 times."
     },
     {
       "name": "Revolver+",
@@ -409,7 +425,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Damage.\nCrit: !C! %\nCritical hit deals 7 times as much damage instead of 3 times."
+      "description": "Deal 3 Damage.\nCrit: !C! %\nCritical hit deals 7 times as much damage instead of 3 times."
     },
     {
       "name": "Rocket Jump",
@@ -609,7 +625,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 3 Silent damage and apply 1 Frail twice.\nCrit: !C! %"
+      "description": "Deal 3 Silent damage twice and apply 1 Frail twice.\nCrit: !C! %"
     },
     {
       "name": "Crossbow+",
@@ -617,7 +633,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Silent damage and apply 2 Frail twice.\nCrit: !C! %"
+      "description": "Deal 4 Silent damage twice and apply 2 Frail twice.\nCrit: !C! %"
     },
     {
       "name": "Defibrilator",
@@ -897,7 +913,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Lose 6 HP.\nAdd 5 Shivs to your hand.\n(Affected by damage modifiers.)"
+      "description": "Lose 6 HP.\nAdd 5 Shivs to your hand.\n(Amount of Shivs affected by damage modifiers.)"
     },
     {
       "name": "Hand Claws+",
@@ -905,7 +921,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Lose 6 HP.\nAdd 7 Shivs to your hand.\n(Affected by damage modifiers.)"
+      "description": "Lose 6 HP.\nAdd 7 Shivs to your hand.\n(Amount of Shivs affected by damage modifiers.)"
     },
     {
       "name": "Heavy Shotgun",
@@ -913,7 +929,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Expose yourself.\nDeal 4 Damage to random enemy 4 times. Crit: !C! %\nDiscard random card for every Critical hit."
+      "description": "Expose yourself.\nDeal 4 Damage to random enemy 4 times. Crit: !C! %\nDiscard a random card for every Critical hit."
     },
     {
       "name": "Heavy Shotgun+",
@@ -921,7 +937,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Expose yourself.\nDeal 5 Damage to random enemy 4 times. Crit: !C! %\nDiscard random card for every Critical hit."
+      "description": "Expose yourself.\nDeal 5 Damage to random enemy 4 times. Crit: !C! %\nDiscard a random card for every Critical hit."
     },
     {
       "name": "Hideout",
@@ -1025,7 +1041,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 4 Damage X times.\nCrit: X times !C! %."
+      "description": "Deal 3 Damage X times.\nCrit: X times !C! %."
     },
     {
       "name": "Railgun+",
@@ -1033,7 +1049,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "X",
-      "description": "Deal 4 Damage X times.\nCrit: X times !C! %."
+      "description": "Deal 3 Damage X times.\nCrit: X times !C! %."
     },
     {
       "name": "Save Up",
@@ -1169,7 +1185,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Retain.\nRemove ALL effects affecting damage from ALL creatures.\nExhaust."
+      "description": "Retain.\nRemove ALL Strength, Vulnerable, Weak, Intangible and Slow from ALL creatures (Including you).\nExhaust."
     },
     {
       "name": "The Law+",
@@ -1177,7 +1193,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Innate.\nRetain.\nRemove ALL effects affecting damage from ALL creatures.\nExhaust."
+      "description": "Innate.\nRetain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow from ALL creatures (Including you).\nExhaust."
     },
     {
       "name": "Tracers",
@@ -1201,7 +1217,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 3 cards.\nThis card cost 1 more energy for this turn."
+      "description": "Draw 3 cards.\nThis card costs 1 more energy for this turn.\nInfinitely upgradeable."
     },
     {
       "name": "Ammo Box+1",
@@ -1209,7 +1225,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 4 cards.\nThis card cost 1 more energy for this turn."
+      "description": "Draw 4 cards.\nThis card costs 1 more energy for this turn.\nInfinitely upgradeable."
     },
     {
       "name": "Automatic Mode",
@@ -1265,7 +1281,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Every time you use a Grenade, gain 7 Block."
+      "description": "Every time you use a Grenade, gain 6 Block."
     },
     {
       "name": "Blast Shields+",
@@ -1273,7 +1289,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Every time you use a Grenade, gain 10 Block."
+      "description": "Every time you use a Grenade, gain 8 Block."
     },
     {
       "name": "Cluster Grenade",
@@ -1393,7 +1409,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 1 Silent Damage to random enemy 11 times. Crit: !C! %\nIgnores Precision.\nFires once more for every Critical hit."
+      "description": "Deal 1 Silent Damage to random enemy 11 times.\nCrit: !C! %\nIgnores Precision.\nFires once more for every Critical hit.\nInfinitely upgradeable."
     },
     {
       "name": "Minigun+1",
@@ -1401,7 +1417,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 1 Silent Damage to random enemy 15 times. Crit: !C! %\nIgnores Precision.\nFires once more for every Critical hit."
+      "description": "Deal 1 Silent Damage to random enemy 15 times.\nCrit: !C! %\nIgnores Precision.\nFires once more for every Critical hit.\nInfinitely upgradeable."
     },
     {
       "name": "Perfect Form",
@@ -1457,7 +1473,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Innate.\nLose 2 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength."
+      "description": "Innate.\nLose 2 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength you gained."
     },
     {
       "name": "Veteran+",
@@ -1465,7 +1481,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Innate.\nLose 1 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength."
+      "description": "Innate.\nLose 1 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength you gained."
     },
     {
       "name": "Void Grenade",
@@ -1489,22 +1505,22 @@
       "name": "Rusty Magazine",
       "tier": "Starter",
       "pool": "Black",
-      "description": "At the start of each combat, Upgrade ALL Rusty Handguns in your deck.",
+      "description": "The first time you eneter a combat, Upgrade ALL Rusty Handguns in your deck.",
       "flavorText": "Rusty magazine for your Rusty Handgun."
     },
     {
       "name": "Rum Bottle",
       "tier": "Common",
       "pool": "Black",
-      "description": "At the start of each turn, gain 1 Concentrated and lose 5 Precision.",
-      "flavorText": "Tasty alcoholic bevrage."
+      "description": "At the start of each turn, gain 1 Concentrated and lose 8 Precision.",
+      "flavorText": "Tasty alcoholic beverage."
     },
     {
       "name": "Scales Of Injustice",
       "tier": "Boss",
       "pool": "",
       "description": "At the start of each turn, gain 1 energy. At the end of each turn, deal 6 damage to the creature with lowest HP. (Including you)",
-      "flavorText": "If world wasn't unfair enough."
+      "flavorText": "As if world wasn't unfair enough."
     },
     {
       "name": "Trusty Magazine",
@@ -1524,7 +1540,7 @@
   "keywords": [
     {
       "name": "Burning",
-      "description": "Burning creatures take damage at the end of their turn. Each turn, Burning is decreased by the amount Blocked. Also lowers Transient's damage."
+      "description": "Burning creatures take damage at the end of their turn. Each turn, Burning is decreased by the amount Blocked. Also lowers the Transient's damage."
     },
     {
       "name": "Concentrated",
@@ -1548,7 +1564,7 @@
     },
     {
       "name": "Painkillers",
-      "description": "Painkillers are 0 cost Skills which heal a portion of your HP and Exhaust."
+      "description": "Painkillers are 0 cost Skills which heal a portion of your HP you lost in your turn and Exhaust."
     },
     {
       "name": "Precision",
