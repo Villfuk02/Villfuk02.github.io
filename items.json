@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Marksman",
-    "version": "0.2.24",
+    "version": "0.2.26",
     "authors": ["Villfuk02","Residualshade"],
     "credits": "",
     "description": "Adds The Marksman as a new playable character and slightly changes how Burns work. Thanks Residualshade for updating the mod and everyone from the StS modding community for all the help!",
@@ -16,16 +16,16 @@
       "color": "Colorless",
       "rarity": "Basic",
       "type": "Skill",
-      "cost": "1",
-      "description": "Heal 75 % of HP lost this turn.\nExhaust."
+      "cost": "0",
+      "description": "Heal 50 % of HP lost this turn.\nExhaust."
     },
     {
       "name": "Painkillers+",
       "color": "Colorless",
       "rarity": "Basic",
       "type": "Skill",
-      "cost": "1",
-      "description": "Heal 100 % of HP lost this turn.\nExhaust."
+      "cost": "0",
+      "description": "Heal 75 % of HP lost this turn.\nExhaust."
     },
     {
       "name": "Defend",
@@ -337,7 +337,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nGain 10 Precision.\nLose 1 Strength for this turn."
+      "description": "Gain 9 Block.\nGain 20 Precision.\nLose 1 Strength for this turn."
     },
     {
       "name": "Lay Down+",
@@ -345,7 +345,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nGain 20 Precision.\nLose 1 Strength for this turn."
+      "description": "Gain 12 Block.\nGain 30 Precision.\nLose 1 Strength for this turn."
     },
     {
       "name": "Molotov Cocktail",
@@ -592,16 +592,16 @@
       "color": "Black",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
-      "description": "Every time you lose Strength or Dexterity, deal 3 damage to ALL enemies."
+      "cost": "2",
+      "description": "Innate.\nEvery time you lose Strength, Deal 2 Damage to ALL enemies and gain 1 Dexterity."
     },
     {
       "name": "Counter Strike+",
       "color": "Black",
       "rarity": "Uncommon",
       "type": "Power",
-      "cost": "1",
-      "description": "Every time you lose Strength or Dexterity, deal 4 damage to ALL enemies."
+      "cost": "2",
+      "description": "Innate.\nEvery time you lose Strength, Deal 5 Damage to ALL enemies and gain 1 Dexterity."
     },
     {
       "name": "Critical Decision",
@@ -625,7 +625,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 3 Silent damage twice and apply 1 Frail twice.\nCrit: !C! %"
+      "description": "Deal 3 Silent damage twice and remove 2 Artifact.\nCrit: !C! %"
     },
     {
       "name": "Crossbow+",
@@ -633,7 +633,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 Silent damage twice and apply 2 Frail twice.\nCrit: !C! %"
+      "description": "Deal 4 Silent damage twice and remove 3 Artifact.\nCrit: !C! %"
     },
     {
       "name": "Defibrilator",
@@ -737,7 +737,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal ALL HP lost this turn.\nShuffle 2 Painkillers into your draw pile."
+      "description": "Heal ALL HP lost this turn.\nShuffle 2 Painkillers into your draw pile.\nDraw 1 card."
     },
     {
       "name": "First Aid Kit+",
@@ -745,7 +745,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal ALL HP lost this turn.\nShuffle 2 Upgraded Painkillers into your draw pile."
+      "description": "Heal ALL HP lost this turn.\nShuffle 2 Upgraded Painkillers into your draw pile.\nDraw 1 card."
     },
     {
       "name": "Flamethrower",
@@ -881,7 +881,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Use and Exhaust a Grenade from your draw pile, discard pile or hand."
+      "description": "Use and Exhaust up to -1 Grenades from your draw pile, discard pile or hand (in this order)."
     },
     {
       "name": "Grenade Launcher+",
@@ -889,7 +889,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Retain.\nUse and Exhaust a Grenade from your draw pile, discard pile or hand."
+      "description": "Use and Exhaust up to -1 Grenades from your draw pile, discard pile or hand (in this order)."
     },
     {
       "name": "Guilt",
@@ -961,7 +961,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "This turn, whenever you deal unblocked Attack damage, apply 2 Burning."
+      "description": "This turn, whenever you hit an enemy with an Attack, apply 2 Burning."
     },
     {
       "name": "Ignite+",
@@ -969,7 +969,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "This turn, whenever you deal unblocked Attack damage, apply 2 Burning."
+      "description": "This turn, whenever you hit an enemy with an Attack, apply 2 Burning."
     },
     {
       "name": "Insulation",
@@ -993,7 +993,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 6 Block.\nIf you have less than 6 Plated Armor, gain 3 Plated Armor."
+      "description": "Gain 8 Block.\nIf you have less than 8 Plated Armor, gain 3 Plated Armor."
     },
     {
       "name": "Kevlar+",
@@ -1001,7 +1001,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 7 Block.\nIf you have less than 7 Plated Armor, gain 4 Plated Armor."
+      "description": "Gain 11 Block.\nIf you have less than 11 Plated Armor, gain 4 Plated Armor."
     },
     {
       "name": "Lock On",
@@ -1025,7 +1025,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Next turn, gain\n2 X - 3 Energy."
+      "description": "Next turn, gain X times 2 Energy."
     },
     {
       "name": "Nuclear Power+",
@@ -1033,7 +1033,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Next turn, gain\n2 X - 2 Energy."
+      "description": "Next turn, gain X times 3 Energy."
     },
     {
       "name": "Railgun",
@@ -1201,7 +1201,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Every time you play an Attack, gain 5 Precision."
+      "description": "Every time you play an Attack, gain 10 Precision."
     },
     {
       "name": "Tracers+",
@@ -1209,7 +1209,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Every time you play an Attack, gain 8 Precision."
+      "description": "Every time you play an Attack, gain 15 Precision."
     },
     {
       "name": "Ammo Box",
@@ -1344,7 +1344,7 @@
       "color": "Black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "3",
+      "cost": "2",
       "description": "For every Burning damage you deal, gain that much Block."
     },
     {
@@ -1352,7 +1352,7 @@
       "color": "Black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "For every Burning damage you deal, gain that much Block."
     },
     {
@@ -1393,7 +1393,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Weak.\nGain 35 Precision.\nCan be only played as a first card this turn."
+      "description": "Gain 1 Weak.\nGain 50 Precision.\nCan be only played as a first card this turn."
     },
     {
       "name": "Lucky Mode+",
@@ -1401,7 +1401,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 1 Weak.\nGain 50 Precision.\nCan be only played as a first card this turn."
+      "description": "Gain 1 Weak.\nGain 70 Precision.\nCan be only played as a first card this turn."
     },
     {
       "name": "Minigun",
@@ -1544,7 +1544,7 @@
     },
     {
       "name": "Concentrated",
-      "description": "Doubles Crit for one turn."
+      "description": "Doubles Crit chance for one turn."
     },
     {
       "name": "Corrosion",
@@ -1568,7 +1568,7 @@
     },
     {
       "name": "Precision",
-      "description": "Increases Crit of all attacks with Crit. Removed at the end of turn."
+      "description": "Increases Crit chance of all attacks with Crit. Removed at the end of turn."
     },
     {
       "name": "Silent damage",
