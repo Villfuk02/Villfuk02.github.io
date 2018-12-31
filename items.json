@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Marksman",
-    "version": "0.3.0",
+    "version": "0.3.3",
     "authors": ["Villfuk02","Residualshade"],
     "credits": "",
     "description": "Adds The Marksman as a new playable character and slightly changes how Burns work. Thanks Residualshade for updating the mod and everyone from the StS modding community for all the help!",
@@ -81,7 +81,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "3",
-      "description": "Stun ALL enemies and apply 2 Weak and Vulnerable to ALL enemies.\nExhaust."
+      "description": "Apply 1 Stunned, 2 Weak and 2 Vulnerable to ALL enemies.\nExhaust."
     },
     {
       "name": "Stun Grenade+",
@@ -89,7 +89,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "3",
-      "description": "Stun ALL enemies and apply 3 Weak and Vulnerable to ALL enemies.\nExhaust."
+      "description": "Apply 1 Stunned, 3 Weak and 3 Vulnerable to ALL enemies.\nExhaust."
     },
     {
       "name": "Trusty Handgun",
@@ -193,7 +193,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block."
+      "description": "Gain 13 Block."
     },
     {
       "name": "Camouflage+",
@@ -201,7 +201,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 16 Block."
+      "description": "Gain 17 Block."
     },
     {
       "name": "Chainsaw",
@@ -337,7 +337,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nGain 20 Precision.\nLose 1 Strength for this turn."
+      "description": "Gain 5 Block.\nGain 20 Precision.\nLose 1 Strength for this turn."
     },
     {
       "name": "Lay Down+",
@@ -345,7 +345,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 12 Block.\nGain 30 Precision.\nLose 1 Strength for this turn."
+      "description": "Gain 7 Block.\nGain 30 Precision.\nLose 1 Strength for this turn."
     },
     {
       "name": "Molotov Cocktail",
@@ -673,7 +673,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 9 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
+      "description": "Deal 8 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
     },
     {
       "name": "Electric Grenade+",
@@ -681,7 +681,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 12 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
+      "description": "Deal 11 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
     },
     {
       "name": "Explosives Expert",
@@ -785,7 +785,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies."
+      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies, Draw 1 card."
     },
     {
       "name": "Flare Gun+",
@@ -793,7 +793,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "",
-      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies, Draw 1 card."
+      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies, Draw 2 cards."
     },
     {
       "name": "Foresight",
@@ -880,16 +880,16 @@
       "color": "Black",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "0",
-      "description": "Use and Exhaust up to -1 Grenades from your draw pile, discard pile or hand (in this order)."
+      "cost": "1",
+      "description": "Use and Exhaust up to 2 Grenades from your draw pile, discard pile or hand (in this order)."
     },
     {
       "name": "Grenade Launcher+",
       "color": "Black",
       "rarity": "Uncommon",
       "type": "Attack",
-      "cost": "0",
-      "description": "Use and Exhaust up to -1 Grenades from your draw pile, discard pile or hand (in this order)."
+      "cost": "1",
+      "description": "Use and Exhaust up to 3 Grenades from your draw pile, discard pile or hand (in this order)."
     },
     {
       "name": "Guilt",
@@ -1057,7 +1057,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Next turn, gain [R] [R] and draw 3 more cards."
+      "description": "Next turn, gain [R] [R] [R] and draw 3 more cards."
     },
     {
       "name": "Save Up+",
@@ -1065,7 +1065,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Retain.\nNext turn, gain [R] [R] and draw 3 more cards."
+      "description": "Retain.\nNext turn, gain [R] [R] [R] and draw 3 more cards."
     },
     {
       "name": "Saw Blade",
@@ -1105,7 +1105,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 13 Block.\nUpgrade 2 random Attacks in your hand for the rest of combat."
+      "description": "Gain 10 Block.\nUpgrade 2 random Attacks in your hand for the rest of combat."
     },
     {
       "name": "Skin = Skill+",
@@ -1113,7 +1113,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 17 Block.\nUpgrade ALL Attacks in your hand for the rest of combat."
+      "description": "Gain 14 Block.\nUpgrade ALL Attacks in your hand for the rest of combat."
     },
     {
       "name": "Smoke Grenade",
@@ -1193,7 +1193,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Innate.\nRetain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
+      "description": "Innate. Retain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
     },
     {
       "name": "Tracers",
@@ -1265,7 +1265,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Every time a card is exhausted, shuffle HE Grenade into your draw pile."
+      "description": "Every time a card is Exhausted, shuffle HE Grenade into your draw pile."
     },
     {
       "name": "Black Powder+",
@@ -1273,7 +1273,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Every time a card is exhausted, shuffle HE Grenade into your draw pile."
+      "description": "Every time a card is Exhausted, shuffle HE Grenade into your draw pile."
     },
     {
       "name": "Blast Shields",
@@ -1424,7 +1424,7 @@
       "color": "Black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "4",
+      "cost": "3",
       "description": "Ethereal.\nWhenever you deal a Critical hit, play the card again.\nWorks 2 times per turn."
     },
     {
@@ -1432,7 +1432,7 @@
       "color": "Black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "4",
+      "cost": "3",
       "description": "Ethereal.\nWhenever you deal a Critical hit, play the card again.\nWorks 3 times per turn."
     },
     {
@@ -1441,7 +1441,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 30 damage.\nCrit: !C! %\nApply 3 Burning to ALL enemies."
+      "description": "Deal 30 damage.\nCrit: !C! %\nApply 4 Burning to ALL enemies."
     },
     {
       "name": "Rocket Launcher+",
@@ -1449,7 +1449,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 36 damage.\nCrit: !C! %\nApply 4 Burning to ALL enemies."
+      "description": "Deal 36 damage.\nCrit: !C! %\nApply 7 Burning to ALL enemies."
     },
     {
       "name": "Stealth Mode",
@@ -1509,8 +1509,43 @@
       "flavorText": "Rusty magazine for your Rusty Handgun."
     },
     {
+      "name": "Infinite Lighter",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you apply Burning, apply an additional 1 Burning.",
+      "flavorText": "It's flame can't be put out."
+    },
+    {
+      "name": "Rusty Helmet",
+      "tier": "Uncommon",
+      "pool": "Black",
+      "description": "Whenever you land a Critical Hit, gain 3 Block.",
+      "flavorText": "It brings back memories, but how did it get here?"
+    },
+    {
+      "name": "Hellfire Lighter",
+      "tier": "Rare",
+      "pool": "Red",
+      "description": "Whenever you apply Vulnerable or gain Strength, apply 1 Burning to ALL enemies.",
+      "flavorText": "It's flame grows with your strength."
+    },
+    {
+      "name": "Lighter Orb",
+      "tier": "Rare",
+      "pool": "Blue",
+      "description": "Whenever you Evoke an Orb, apply 1 Burning to ALL enemies.",
+      "flavorText": "It's not that dark nor heavy."
+    },
+    {
+      "name": "Poison Lighter",
+      "tier": "Rare",
+      "pool": "Green",
+      "description": "Whenever you apply Poison, apply 1 Burning to ALL enemies.",
+      "flavorText": "Who would have thought Poison is flammable."
+    },
+    {
       "name": "Rum Bottle",
-      "tier": "Common",
+      "tier": "Rare",
       "pool": "Black",
       "description": "At the start of each turn, gain 1 Concentrated and lose 8 Precision.",
       "flavorText": "Tasty alcoholic beverage."
