@@ -1,0 +1,1613 @@
+{
+  "mod": {
+    "name": "The Marksman",
+    "version": "0.3.3",
+    "authors": ["Villfuk02","Residualshade"],
+    "credits": "",
+    "description": "Adds The Marksman as a new playable character and slightly changes how Burns work. Thanks Residualshade for updating the mod and everyone from the StS modding community for all the help!",
+    "mts_version": "3.6.0",
+    "sts_version": "12-20-2018",
+    "dependencies": ["basemod","stslib"],
+    "optional_dependencies": []
+  },
+  "cards": [
+    {
+      "name": "Painkillers",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 50 % of HP lost this turn.\nExhaust."
+    },
+    {
+      "name": "Painkillers+",
+      "color": "Colorless",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Heal 75 % of HP lost this turn.\nExhaust."
+    },
+    {
+      "name": "Defend",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block."
+    },
+    {
+      "name": "Defend+",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block."
+    },
+    {
+      "name": "Rusty Handgun",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage.\nCrit: !C! %\nIf this Crits, Exhaust."
+    },
+    {
+      "name": "Rusty Handgun+",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage.\nCrit: !C! %\nIf this Crits, Exhaust."
+    },
+    {
+      "name": "Strike",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage."
+    },
+    {
+      "name": "Strike+",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Damage."
+    },
+    {
+      "name": "Stun Grenade",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Apply 1 Stunned, 2 Weak and 2 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Stun Grenade+",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Apply 1 Stunned, 3 Weak and 3 Vulnerable to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Trusty Handgun",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage.\nCrit: !C! %"
+    },
+    {
+      "name": "Trusty Handgun+",
+      "color": "Black",
+      "rarity": "Basic",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 Damage.\nCrit: !C! %"
+    },
+    {
+      "name": "Backup Plan",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Choose 1 card from your draw pile and place it into your hand.\nExhaust."
+    },
+    {
+      "name": "Backup Plan+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Retain.\nChoose 1 card from your draw pile and place it into your hand.\nExhaust."
+    },
+    {
+      "name": "Bayonet",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 7 damage for every Critical hit this turn.\nExhaust."
+    },
+    {
+      "name": "Bayonet+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 9 damage for every Critical hit this turn."
+    },
+    {
+      "name": "Bow",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 6 Silent damage.\nCrit: !C! %\nLose 1 Strength."
+    },
+    {
+      "name": "Bow+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 8 Silent damage.\nCrit: !C! %\nLose 1 Strength."
+    },
+    {
+      "name": "Burst Fire",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 Damage 3 times.\nCrit: !C! %\nLose 10 Precision for every Critical hit."
+    },
+    {
+      "name": "Burst Fire+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 4 Damage 4 times.\nCrit: !C! %\nLose 10 Precision for every Critical hit."
+    },
+    {
+      "name": "Calculated",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 20 Precision.\nDraw 2 cards.\nDiscard 2 cards."
+    },
+    {
+      "name": "Calculated+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 30 Precision.\nDraw 2 cards.\nDiscard 2 cards."
+    },
+    {
+      "name": "Camouflage",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 13 Block."
+    },
+    {
+      "name": "Camouflage+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 17 Block."
+    },
+    {
+      "name": "Chainsaw",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 6 Damage.\nDraw a 0-cost card from your draw pile."
+    },
+    {
+      "name": "Chainsaw+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 6 Damage.\nDraw a 0-cost card from your draw pile.\nIf there are none, shuffle your discard into your draw pile."
+    },
+    {
+      "name": "Combat Trousers",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDiscard 1 random card, then Retain 1 random card."
+    },
+    {
+      "name": "Combat Trousers+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 12 Block.\nDiscard 1 random card, then Retain 1 random card."
+    },
+    {
+      "name": "Decoy",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Expose yourself.\nGain 11 Block."
+    },
+    {
+      "name": "Decoy+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Expose yourself.\nGain 15 Block."
+    },
+    {
+      "name": "Expect Anything",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nEthereal.\nGain 10 Block.\nExhaust."
+    },
+    {
+      "name": "Expect Anything+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate.\nEthereal.\nGain 14 Block.\nExhaust."
+    },
+    {
+      "name": "Golden Bullet",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend 8 Gold.\nDeal 20 damage.\nCrit: !C! %\nIf this deals Critical hit, Gain 40 Gold.\nExhaust."
+    },
+    {
+      "name": "Golden Bullet+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Spend 8 Gold.\nDeal 24 damage.\nCrit: !C! %\nIf this deals Critical hit, Gain 40 Gold.\nExhaust."
+    },
+    {
+      "name": "HE Grenade",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 10 Damage to ALL enemies."
+    },
+    {
+      "name": "HE Grenade+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 13 Damage to ALL enemies."
+    },
+    {
+      "name": "Hand Cannon",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 9 Damage.\nTarget loses 6 HP.\nLose 25 Precision."
+    },
+    {
+      "name": "Hand Cannon+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 12 Damage.\nTarget loses 8 HP.\nLose 25 Precision."
+    },
+    {
+      "name": "Height Advantage",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 4 Block.\nGain 5 Precision.\nExpose ALL enemies."
+    },
+    {
+      "name": "Height Advantage+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 6 Block.\nGain 10 Precision.\nExpose ALL enemies."
+    },
+    {
+      "name": "Lay Down",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 5 Block.\nGain 20 Precision.\nLose 1 Strength for this turn."
+    },
+    {
+      "name": "Lay Down+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nGain 30 Precision.\nLose 1 Strength for this turn."
+    },
+    {
+      "name": "Molotov Cocktail",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 4 Burning."
+    },
+    {
+      "name": "Molotov Cocktail+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 6 Burning."
+    },
+    {
+      "name": "Napalm Grenade",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 Damage and apply 3 Burning to ALL enemies."
+    },
+    {
+      "name": "Napalm Grenade+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 Damage and apply 5 Burning to ALL enemies."
+    },
+    {
+      "name": "Pump Shotgun",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 4 times. Crit: !C! %\nLose 1 Strength for this turn for every Critical hit."
+    },
+    {
+      "name": "Pump Shotgun+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 5 times. Crit: !C! %\nLose 1 Strength for this turn for every Critical hit."
+    },
+    {
+      "name": "Reposition",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nLose 1 Strength for this turn."
+    },
+    {
+      "name": "Reposition+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 2 cards.\nLose 1 Strength for this turn."
+    },
+    {
+      "name": "Revolver",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nCrit: !C! %\nCritical hit deals 5 times as much damage instead of 3 times."
+    },
+    {
+      "name": "Revolver+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage.\nCrit: !C! %\nCritical hit deals 7 times as much damage instead of 3 times."
+    },
+    {
+      "name": "Rocket Jump",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 11 damage.\nShuffle 3 Burns into your discard pile.\nDraw 4 cards."
+    },
+    {
+      "name": "Rocket Jump+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 12 damage.\nShuffle 3 Burns into your discard pile.\nDraw 5 cards."
+    },
+    {
+      "name": "Run And Gun",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 5 damage,\nCrit: !C! %\nDraw 2 cards."
+    },
+    {
+      "name": "Run And Gun+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 damage,\nCrit: !C! %\nDraw 2 cards."
+    },
+    {
+      "name": "Silver Bullet",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Lose 3 HP.\nDeal 20 damage.\nCrit: !C! %\nIf this deals Critical hit, heal 15 HP.\nExhaust."
+    },
+    {
+      "name": "Silver Bullet+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Lose 3 HP.\nDeal 24 damage.\nCrit: !C! %\nIf this deals Critical hit, heal 15 HP.\nExhaust."
+    },
+    {
+      "name": "UV Laser",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 7 Silent Damage to ALL enemies.\nGain 2 Weak."
+    },
+    {
+      "name": "UV Laser+",
+      "color": "Black",
+      "rarity": "Common",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 9 Silent Damage to ALL enemies.\nGain 2 Weak."
+    },
+    {
+      "name": "Acid Bottle",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Corrosion to an enemy.\nExhaust."
+    },
+    {
+      "name": "Acid Bottle+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 3 Corrosion to an enemy.\nExhaust."
+    },
+    {
+      "name": "Aggression",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you become Vulnerable, remove the effect and ALL creatures (including you) gain 2 Strength for this turn."
+    },
+    {
+      "name": "Aggression+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you become Vulnerable, remove the effect and ALL creatures (including you) gain 3 Strength for this turn."
+    },
+    {
+      "name": "Anti Flame",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 17 Block.\nShuffle 3 Burns into your discard pile.\nDiscard ALL Burns."
+    },
+    {
+      "name": "Anti Flame+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 22 Block.\nShuffle 3 Burns into your discard pile.\nDiscard ALL Burns."
+    },
+    {
+      "name": "Assasinate",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 40 Silent Damage.\nLose 5 Strength."
+    },
+    {
+      "name": "Assasinate+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 50 Silent Damage.\nLose 5 Strength."
+    },
+    {
+      "name": "Concentrate",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Concentrated.\nDraw 3 cards.\nYou cannot draw any more cards this turn."
+    },
+    {
+      "name": "Concentrate+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 1 Concentrated.\nDraw 4 cards.\nYou cannot draw any more cards this turn."
+    },
+    {
+      "name": "Corrosive Grenade",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Damage and apply 2 Corrosion to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Corrosive Grenade+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Damage and apply 3 Corrosion to ALL enemies.\nExhaust."
+    },
+    {
+      "name": "Counter Strike",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nEvery time you lose Strength, Deal 2 Damage to ALL enemies and gain 1 Dexterity."
+    },
+    {
+      "name": "Counter Strike+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nEvery time you lose Strength, Deal 5 Damage to ALL enemies and gain 1 Dexterity."
+    },
+    {
+      "name": "Critical Decision",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nDraw 3 cards for every Critical hit you've dealt this turn."
+    },
+    {
+      "name": "Critical Decision+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Ethereal.\nDraw 5 cards for every Critical hit you've dealt this turn."
+    },
+    {
+      "name": "Crossbow",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 3 Silent damage twice and remove 2 Artifact.\nCrit: !C! %"
+    },
+    {
+      "name": "Crossbow+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Deal 4 Silent damage twice and remove 3 Artifact.\nCrit: !C! %"
+    },
+    {
+      "name": "Defibrilator",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Lose 18 HP.\nGain 6 Regen.\nExhaust."
+    },
+    {
+      "name": "Defibrilator+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Innate.\nLose 11 HP.\nGain 6 Regen.\nExhaust."
+    },
+    {
+      "name": "Electric Blood",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] .\nLose 10 HP.\nDeal 1 damage to ALL enemies."
+    },
+    {
+      "name": "Electric Blood+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] [R] .\nLose 10 HP.\nDeal 1 damage to ALL enemies."
+    },
+    {
+      "name": "Electric Grenade",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
+    },
+    {
+      "name": "Electric Grenade+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 11 Damage to ALL enemies.\nNext turn, gain [R] [R] ."
+    },
+    {
+      "name": "Explosives Expert",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time you use a Grenade, draw 2 cards."
+    },
+    {
+      "name": "Explosives Expert+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time you use a Grenade, draw 3 cards."
+    },
+    {
+      "name": "Extended Magazines",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 2 cards.\nIf you have at most 1 Skill in your hand, Gain [R]."
+    },
+    {
+      "name": "Extended Magazines+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Draw 3 cards.\nIf you have at most 1 Skill in your hand, Gain [R]."
+    },
+    {
+      "name": "Firepower",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time you gain Burning, remove that effect and apply that much Burning to ALL enemies."
+    },
+    {
+      "name": "Firepower+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time you gain Burning, remove that effect and apply that much Burning to ALL enemies."
+    },
+    {
+      "name": "First Aid Kit",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal ALL HP lost this turn.\nShuffle 2 Painkillers into your draw pile.\nDraw 1 card."
+    },
+    {
+      "name": "First Aid Kit+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Heal ALL HP lost this turn.\nShuffle 2 Upgraded Painkillers into your draw pile.\nDraw 1 card."
+    },
+    {
+      "name": "Flamethrower",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Apply 3 Burning to ALL enemies X times."
+    },
+    {
+      "name": "Flamethrower+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Apply 4 Burning to ALL enemies X times."
+    },
+    {
+      "name": "Flammable Fumes",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of every turn, increase ALL Burning by 4"
+    },
+    {
+      "name": "Flammable Fumes+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the end of every turn, increase ALL Burning by 6"
+    },
+    {
+      "name": "Flare Gun",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies, Draw 1 card."
+    },
+    {
+      "name": "Flare Gun+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "",
+      "description": "Unplayable.\nWhen drawn, Expose yourself, Expose ALL enemies, apply 1 Weak to ALL enemies, Draw 2 cards."
+    },
+    {
+      "name": "Foresight",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 11 Block.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Foresight+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 15 Block.\nPlace a card from your discard pile on top of your draw pile."
+    },
+    {
+      "name": "Frag Grenade",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 7 Damage to ALL enemies. Deal 2 Silent Damage to a random enemy 7 times."
+    },
+    {
+      "name": "Frag Grenade+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 8 Damage to ALL enemies. Deal 2 Silent Damage to a random enemy 10 times."
+    },
+    {
+      "name": "Fragile Blood",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 4 Regen.\nApply 4 Thorns to ALL enemies."
+    },
+    {
+      "name": "Fragile Blood+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 5 Regen.\nApply 5 Thorns to ALL enemies."
+    },
+    {
+      "name": "Frying Pan",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nIf you have 0 Block, gain 7 Block. Otherwise deal 8 damage."
+    },
+    {
+      "name": "Frying Pan+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Retain.\nIf you have 0 Block, gain 9 Block. Otherwise deal 10 damage."
+    },
+    {
+      "name": "Gamma Ray",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 5 damage twice.\nCrit: !C! %\nIf this deals 2 critical hits, the second one deals 9 times as much damage."
+    },
+    {
+      "name": "Gamma Ray+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Deal 6 damage twice.\nCrit: !C! %\nIf this deals 2 critical hits, the second one deals 9 times as much damage."
+    },
+    {
+      "name": "Grenade Launcher",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Use and Exhaust up to 2 Grenades from your draw pile, discard pile or hand (in this order)."
+    },
+    {
+      "name": "Grenade Launcher+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "1",
+      "description": "Use and Exhaust up to 3 Grenades from your draw pile, discard pile or hand (in this order)."
+    },
+    {
+      "name": "Guilt",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "At the start of every turn, gain [R] [R] .\nEvery time you play an Attack, lose 2 Strength for one turn."
+    },
+    {
+      "name": "Guilt+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Innate.\nAt the start of every turn, gain [R] [R] [R] .\nEvery time you play an Attack, lose 2 Strength for one turn."
+    },
+    {
+      "name": "Hand Claws",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 6 HP.\nAdd 5 Shivs to your hand.\n(Amount of Shivs affected by damage modifiers.)"
+    },
+    {
+      "name": "Hand Claws+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Lose 6 HP.\nAdd 7 Shivs to your hand.\n(Amount of Shivs affected by damage modifiers.)"
+    },
+    {
+      "name": "Heavy Shotgun",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Expose yourself.\nDeal 4 Damage to random enemy 4 times. Crit: !C! %\nDiscard a random card for every Critical hit."
+    },
+    {
+      "name": "Heavy Shotgun+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Expose yourself.\nDeal 5 Damage to random enemy 4 times. Crit: !C! %\nDiscard a random card for every Critical hit."
+    },
+    {
+      "name": "Hideout",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 7 Block for every Critical hit you've dealt this turn.\nNext turn draw 1 card less."
+    },
+    {
+      "name": "Hideout+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 10 Block for every Critical hit you've dealt this turn.\nNext turn draw 1 card less."
+    },
+    {
+      "name": "Ignite",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "This turn, whenever you hit an enemy with an Attack, apply 2 Burning."
+    },
+    {
+      "name": "Ignite+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "This turn, whenever you hit an enemy with an Attack, apply 2 Burning."
+    },
+    {
+      "name": "Insulation",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nExhaust ALL Burns in your discard pile. For each, apply 3 Burning to ALL enemies."
+    },
+    {
+      "name": "Insulation+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nExhaust ALL Burns in your draw and discard pile. For each, apply 4 Burning to ALL enemies."
+    },
+    {
+      "name": "Kevlar",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 7 Block.\nIf you have less than 7 Plated Armor, gain 3 Plated Armor."
+    },
+    {
+      "name": "Kevlar+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nIf you have less than 10 Plated Armor, gain 4 Plated Armor."
+    },
+    {
+      "name": "Lock On",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Expose an enemy.\nEvery other enemy gains 99 Block.\nGain 1 Concentrated.\nExhaust."
+    },
+    {
+      "name": "Lock On+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Expose an enemy.\nEvery other enemy gains 99 Block.\nGain 1 Concentrated.\nExhaust."
+    },
+    {
+      "name": "Nuclear Power",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, gain X times 2 Energy."
+    },
+    {
+      "name": "Nuclear Power+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "X",
+      "description": "Next turn, gain X times 3 Energy."
+    },
+    {
+      "name": "Railgun",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 Damage X times.\nCrit: X times !C! %."
+    },
+    {
+      "name": "Railgun+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 3 Damage X times.\nCrit: X times !C! %."
+    },
+    {
+      "name": "Save Up",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Next turn, gain [R] [R] [R] and draw 3 more cards."
+    },
+    {
+      "name": "Save Up+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Retain.\nNext turn, gain [R] [R] [R] and draw 3 more cards."
+    },
+    {
+      "name": "Saw Blade",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 4 Damage to ALL enemies.\nDraw a 0-cost card from your draw pile."
+    },
+    {
+      "name": "Saw Blade+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "0",
+      "description": "Expose yourself.\nDeal 4 Damage to ALL enemies.\nDraw 1 card.\nDraw a 0-cost card from your draw pile."
+    },
+    {
+      "name": "Silver Blood",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "ALL enemies gain 2 Strength. Every time you lose HP, gain 1 Regen."
+    },
+    {
+      "name": "Silver Blood+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "ALL enemies gain 1 Strength. Every time you lose HP, gain 1 Regen."
+    },
+    {
+      "name": "Skin = Skill",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Block.\nUpgrade 2 random Attacks in your hand for the rest of combat."
+    },
+    {
+      "name": "Skin = Skill+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 14 Block.\nUpgrade ALL Attacks in your hand for the rest of combat."
+    },
+    {
+      "name": "Smoke Grenade",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Apply 2 Weak to ALL enemies.\nLose 20 Precision."
+    },
+    {
+      "name": "Smoke Grenade+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Apply 2 Weak to ALL enemies.\nLose 20 Precision."
+    },
+    {
+      "name": "Sniper Rifle",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 22 damage.\nCrit: !C! %\nIf this deals Critical hit, copy this card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Sniper Rifle+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 24 damage.\nCrit: !C! %\nIf this deals Critical hit, copy this card into your draw pile.\nExhaust."
+    },
+    {
+      "name": "Steel Blood",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 6 HP.\nGain 3 Metalicize."
+    },
+    {
+      "name": "Steel Blood+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Lose 6 HP.\nGain 5 Metalicize."
+    },
+    {
+      "name": "Tactical Shotgun",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 6 times. Crit: !C! %\nDraw a card for every Critical hit."
+    },
+    {
+      "name": "Tactical Shotgun+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Attack",
+      "cost": "2",
+      "description": "Expose yourself.\nDeal 2 Damage to random enemy 6 times. Crit: !C! %\nDraw a card for every Critical hit."
+    },
+    {
+      "name": "The Law",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Retain.\nRemove ALL Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
+    },
+    {
+      "name": "The Law+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Innate. Retain.\nRemove ALL  Strength, Vulnerable, Weak, Intangible and Slow\nfrom ALL creatures\n(Including you).\nExhaust."
+    },
+    {
+      "name": "Tracers",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time you play an Attack, gain 10 Precision."
+    },
+    {
+      "name": "Tracers+",
+      "color": "Black",
+      "rarity": "Uncommon",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time you play an Attack, gain 15 Precision."
+    },
+    {
+      "name": "Ammo Box",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 3 cards.\nThis card costs 1 more energy for this turn.\nInfinitely upgradeable."
+    },
+    {
+      "name": "Ammo Box+1",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Draw 4 cards.\nThis card costs 1 more energy for this turn.\nInfinitely upgradeable."
+    },
+    {
+      "name": "Automatic Mode",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] [R] [R].\nPut 3 Burns into your discard pile.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Automatic Mode+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] [R] [R].\nPut 2 Burns into your discard pile.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Battery Acid",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] [R] .\nGain 1 Corrosion.\nExhaust."
+    },
+    {
+      "name": "Battery Acid+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain [R] [R] [R] .\nGain 1 Corrosion.\nExhaust."
+    },
+    {
+      "name": "Black Powder",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "Every time a card is Exhausted, shuffle HE Grenade into your draw pile."
+    },
+    {
+      "name": "Black Powder+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Every time a card is Exhausted, shuffle HE Grenade into your draw pile."
+    },
+    {
+      "name": "Blast Shields",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Every time you use a Grenade, gain 6 Block."
+    },
+    {
+      "name": "Blast Shields+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Every time you use a Grenade, gain 8 Block."
+    },
+    {
+      "name": "Cluster Grenade",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 4 Damage to ALL enemies X+1 times.\nIf X is more than 0, gain [R] ."
+    },
+    {
+      "name": "Cluster Grenade+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "X",
+      "description": "Deal 6 Damage to ALL enemies X+1 times.\nIf X is more than 0, gain [R] ."
+    },
+    {
+      "name": "Eye For An Eye",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Every time you lose HP, deal that much damage to a random enemy."
+    },
+    {
+      "name": "Eye For An Eye+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Every time you lose HP, deal 2 times as much damage to a random enemy."
+    },
+    {
+      "name": "Firewall",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 12 Burning.\nNext turn, Gain 30 Block."
+    },
+    {
+      "name": "Firewall+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Gain 10 Burning.\nNext turn, Gain 40 Block."
+    },
+    {
+      "name": "Friendly Fire",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "2",
+      "description": "For every Burning damage you deal, gain that much Block."
+    },
+    {
+      "name": "Friendly Fire+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "For every Burning damage you deal, gain that much Block."
+    },
+    {
+      "name": "Gasoline",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Triple ALL Burning.\nExhaust."
+    },
+    {
+      "name": "Gasoline+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "2",
+      "description": "Quadruple ALL Burning.\nExhaust."
+    },
+    {
+      "name": "Ghost Form",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "1",
+      "description": "Gain 2 Intangible.\nALL cards become Ethereal."
+    },
+    {
+      "name": "Ghost Form+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Gain 2 Intangible.\nALL cards become Ethereal."
+    },
+    {
+      "name": "Lucky Mode",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Weak.\nGain 50 Precision.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Lucky Mode+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Weak.\nGain 70 Precision.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Minigun",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 1 Silent Damage to random enemy 11 times.\nCrit: !C! %\nIgnores Precision.\nFires once more for every Critical hit.\nInfinitely upgradeable."
+    },
+    {
+      "name": "Minigun+1",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "3",
+      "description": "Deal 1 Silent Damage to random enemy 15 times.\nCrit: !C! %\nIgnores Precision.\nFires once more for every Critical hit.\nInfinitely upgradeable."
+    },
+    {
+      "name": "Perfect Form",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nWhenever you deal a Critical hit, play the card again.\nWorks 2 times per turn."
+    },
+    {
+      "name": "Perfect Form+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "3",
+      "description": "Ethereal.\nWhenever you deal a Critical hit, play the card again.\nWorks 3 times per turn."
+    },
+    {
+      "name": "Rocket Launcher",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 30 damage.\nCrit: !C! %\nApply 4 Burning to ALL enemies."
+    },
+    {
+      "name": "Rocket Launcher+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 36 damage.\nCrit: !C! %\nApply 7 Burning to ALL enemies."
+    },
+    {
+      "name": "Stealth Mode",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Intangible.\nLose 2 Strength.\nDraw 2 Cards.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Stealth Mode+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Skill",
+      "cost": "0",
+      "description": "Gain 1 Intangible.\nLose 2 Strength.\nDraw 3 Cards.\nCan be only played as a first card this turn."
+    },
+    {
+      "name": "Veteran",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nLose 2 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength you gained."
+    },
+    {
+      "name": "Veteran+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Power",
+      "cost": "0",
+      "description": "Innate.\nLose 1 Strength.\nEvery turn, gain 2 Strength. Whenever is your draw pile empty, lose the Strength you gained."
+    },
+    {
+      "name": "Void Grenade",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 5 Damage to ALL enemies. Play ALL Grenades from your draw pile.\nLose 5 HP."
+    },
+    {
+      "name": "Void Grenade+",
+      "color": "Black",
+      "rarity": "Rare",
+      "type": "Attack",
+      "cost": "4",
+      "description": "Deal 8 Damage to ALL enemies. Play ALL Grenades from your draw and discard piles.\nLose 5 HP."
+    }
+  ],
+  "relics": [
+    {
+      "name": "Rusty Magazine",
+      "tier": "Starter",
+      "pool": "Black",
+      "description": "The first time you eneter a combat, Upgrade ALL Rusty Handguns in your deck.",
+      "flavorText": "Rusty magazine for your Rusty Handgun."
+    },
+    {
+      "name": "Infinite Lighter",
+      "tier": "Uncommon",
+      "pool": "",
+      "description": "Whenever you apply Burning, apply an additional 1 Burning.",
+      "flavorText": "It's flame can't be put out."
+    },
+    {
+      "name": "Rusty Helmet",
+      "tier": "Uncommon",
+      "pool": "Black",
+      "description": "Whenever you land a Critical Hit, gain 3 Block.",
+      "flavorText": "It brings back memories, but how did it get here?"
+    },
+    {
+      "name": "Hellfire Lighter",
+      "tier": "Rare",
+      "pool": "Red",
+      "description": "Whenever you apply Vulnerable or gain Strength, apply 1 Burning to ALL enemies.",
+      "flavorText": "It's flame grows with your strength."
+    },
+    {
+      "name": "Lighter Orb",
+      "tier": "Rare",
+      "pool": "Blue",
+      "description": "Whenever you Evoke an Orb, apply 1 Burning to ALL enemies.",
+      "flavorText": "It's not that dark nor heavy."
+    },
+    {
+      "name": "Poison Lighter",
+      "tier": "Rare",
+      "pool": "Green",
+      "description": "Whenever you apply Poison, apply 1 Burning to ALL enemies.",
+      "flavorText": "Who would have thought Poison is flammable."
+    },
+    {
+      "name": "Rum Bottle",
+      "tier": "Rare",
+      "pool": "Black",
+      "description": "At the start of each turn, gain 1 Concentrated and lose 8 Precision.",
+      "flavorText": "Tasty alcoholic beverage."
+    },
+    {
+      "name": "Scales Of Injustice",
+      "tier": "Boss",
+      "pool": "",
+      "description": "At the start of each turn, gain 1 energy. At the end of each turn, deal 6 damage to the creature with lowest HP. (Including you)",
+      "flavorText": "As if world wasn't unfair enough."
+    },
+    {
+      "name": "Trusty Magazine",
+      "tier": "Boss",
+      "pool": "Black",
+      "description": "Replaces Rusty Magazine. Transform ALL Rusty Handguns to Trusty Handguns.",
+      "flavorText": "Trusty magazine for your Trusty Handgun."
+    }
+  ],
+  "potions": [
+  ],
+  "creatures": [
+    {
+      "name": "The Marksman"
+    }
+  ],
+  "keywords": [
+    {
+      "name": "Burning",
+      "description": "Burning creatures take damage at the end of their turn. Each turn, Burning is decreased by the amount Blocked. Also lowers the Transient's damage."
+    },
+    {
+      "name": "Concentrated",
+      "description": "Doubles Crit chance for one turn."
+    },
+    {
+      "name": "Corrosion",
+      "description": "At the end of turn, removes all Block and decreases Corrosion by 1."
+    },
+    {
+      "name": "Crit",
+      "description": "Chance of single hit dealing TRIPLE Damage."
+    },
+    {
+      "name": "Expose",
+      "description": "If target isn't Vulnerable, apply 1 Vulnerable."
+    },
+    {
+      "name": "Grenade",
+      "description": "Grenades are cards, which attack ALL enemies and have Grenade in their name."
+    },
+    {
+      "name": "Painkillers",
+      "description": "Painkillers are 0 cost Skills which heal a portion of your HP you lost in your turn and Exhaust."
+    },
+    {
+      "name": "Precision",
+      "description": "Increases Crit chance of all attacks with Crit. Removed at the end of turn."
+    },
+    {
+      "name": "Silent damage",
+      "description": "This damage is NOT considered as Attack damage. That means it is not affected by Strength, Weakness or Vulnerable.\nIt also doesn't trigger Thorns, Curl Up, etc."
+    }
+  ]
+}
